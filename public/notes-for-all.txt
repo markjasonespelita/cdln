@@ -1,0 +1,216 @@
+CRON JOBS ------------------------------------------------------------------------------------------------------------
+
+* * * * *	/usr/bin/php /home/u856365670/domains/(domain)/public_html/artisan sched - for sched
+* * * * *	/usr/bin/php /home/u856365670/domains/(domain)/public_html/artisan queue:work - for sched
+* * * * *	/usr/bin/php /home/u856365670/domains/(domain)/public_html/artisan file-cleanup - for file cleanup in chat
+
+Major Release --------------------------------------------------------------------------------------------------------
+
+(Determine if it has new php package)
+
+1. LOCAL: compress files except public folder, vendor folder, .htaccess and .env file.
+2. SERVER: activate the maintenance page.
+3. SERVER: export the existing database.
+4. LOCAL: create new version of database and import the database from the server.
+5. LOCAL: migrate the new tables, columns if any.
+6. LOCAL: add default values on new columns if any.
+7. SERVER: delete all files except public folder, .htaccess and .env file.
+8. SERVER: upload and export the compresed zip file.
+9. SERVER: delete all tables in the database
+10. SERVER: import the new database from the local.
+11. SERVER: deactivate the maintenance page.
+
+Laravel Auditing -----------------------------------------------------------------------------------------------------
+
+public function transformAudit(array $data): array
+{
+    // Handle 'new_values' user name transformation
+    if (isset($data['new_values']['users_id'])) {
+        $user = \App\Models\User::find($data['new_values']['users_id']);
+        $data['new_values']['user_name'] = optional($user)->name;
+        unset($data['new_values']['users_id']); // Hide the ID
+    }
+
+    // Handle 'old_values' user name transformation (for updates)
+    if (isset($data['old_values']['users_id'])) {
+        $user = \App\Models\User::find($data['old_values']['users_id']);
+        $data['old_values']['user_name'] = optional($user)->name;
+        unset($data['old_values']['users_id']); // Hide the ID
+    }
+
+    return $data;
+}
+
+Remaining ------------------------------------------------------------------------------------------------------------
+
+Features
+
+1. Homepage
+
+- Clean and professional layout with the school’s logo, colors, and mission.
+
+- Quick summary of upcoming events, announcements, and highlights.
+
+- Photo carousel or hero banner with current campus news or achievements.
+
+2. About Section
+
+- School history, mission, vision, and core values.
+
+- Message from the principal or school head.
+
+- Accreditation, achievements, and affiliations.
+
+3. Contact Information
+
+- Map integration (Google Maps).
+
+- Address, contact numbers, and official email.
+
+- Contact form (for inquiries, admissions, or feedback).
+
+📰 Dynamic Content (Always Updated)
+4. Announcements / News Board
+
+- For posting official updates, important notices, and general news.
+
+- Can include filters (e.g. “For Students”, “For Parents”, “For Staff”).
+
+- Optional file attachments (PDF circulars, memos, etc.).
+
+5. Events Calendar
+
+- Upcoming school events, exams, holidays, and deadlines.
+
+- Integration with a calendar UI (e.g. FullCalendar.js).
+
+- Option to view by day/week/month.
+
+
+migrations
+
+### announcements
+
+| Column          | Type                                                      | Description                                                |
+| --------------- | --------------------------------------------------------- | ---------------------------------------------------------- |
+| id              | bigIncrements                                             | Primary key                                                |
+| title           | string                                                    | Title of the announcement                                  |
+| slug            | string (unique)                                           | SEO-friendly URL identifier                                |
+| content         | longText                                                  | Main announcement body                                     |
+| category        | enum(‘students’, ‘parents’, ‘staff’, ‘general’) or string | Who it’s for (can also use separate table for flexibility) |
+| attachment_path | string (nullable)                                         | Path to attached file (PDF, image, etc.)                   |
+| posted_by       | foreignId (users.id)                                      | Who posted the announcement                                |
+| published_at    | timestamp (nullable)                                      | When it was published                                      |
+| expires_at      | timestamp (nullable)                                      | Optional expiration date                                   |
+| status          | enum(‘draft’, ‘published’, ‘archived’)                    | Publication state                                          |
+| created_at      | timestamp                                                 | Auto timestamps                                            |
+| updated_at      | timestamp                                                 | Auto timestamps                                            |
+
+---
+
+### events
+
+| Column      | Type                 | Description                         |
+| ----------- | -------------------- | ----------------------------------- |
+| id          | bigIncrements        | Primary key                         |
+| title       | string               | Event name                          |
+| description | text                 | Event details                       |
+| start_date  | dateTime             | Start of event                      |
+| end_date    | dateTime             | End of event                        |
+| all_day     | boolean              | True if full-day event              |
+| location    | string (nullable)    | Where it will be held               |
+| category    | string (nullable)    | e.g., ‘Exam’, ‘Holiday’, ‘Activity’ |
+| color       | string (nullable)    | Color label for calendar UI         |
+| created_by  | foreignId (users.id) | Creator                             |
+| created_at  | timestamp            | Auto timestamps                     |
+| updated_at  | timestamp            | Auto timestamps                     |
+
+---
+
+### blogs
+
+| Column       | Type                                   | Description                 |
+| ------------ | -------------------------------------- | --------------------------- |
+| id           | bigIncrements                          | Primary key                 |
+| title        | string                                 | Blog post title             |
+| slug         | string (unique)                        | SEO-friendly URL            |
+| excerpt      | text (nullable)                        | Short preview text          |
+| content      | longText                               | Full blog content           |
+| cover_image  | string (nullable)                      | Featured image path         |
+| category_id  | foreignId (nullable)                   | Links to blog_categories    |
+| author_id    | foreignId                              | Links to users (the writer) |
+| status       | enum(‘draft’, ‘published’, ‘archived’) | Post visibility             |
+| published_at | timestamp (nullable)                   | When it’s published         |
+| created_at   | timestamp                              | Auto timestamps             |
+| updated_at   | timestamp                              | Auto timestamps             |
+
+---
+
+### blog_tags
+
+| Column | Type            | Description           |
+| ------ | --------------- | --------------------- |
+| id     | bigIncrements   | Primary key           |
+| name   | string          | Tag name              |
+| slug   | string (unique) | URL-friendly tag name |
+
+---
+
+### blog_post_tag
+
+| Column  | Type      | Description  |
+| ------- | --------- | ------------ |
+| post_id | foreignId | Blog post ID |
+| tag_id  | foreignId | Tag ID       |
+
+---
+
+### blog_comments
+
+| Column     | Type                                | Description               |
+| ---------- | ----------------------------------- | ------------------------- |
+| id         | bigIncrements                       | Primary key               |
+| post_id    | foreignId                           | Related blog post         |
+| user_id    | foreignId (nullable)                | If commenter is logged in |
+| name       | string                              | Guest name                |
+| email      | string                              | Guest email               |
+| comment    | text                                | Comment content           |
+| status     | enum(‘pending’, ‘approved’, ‘spam’) | Moderation                |
+| created_at | timestamp                           | Auto timestamps           |
+| updated_at | timestamp                           | Auto timestamps           |
+
+
+
+
+
+
+
+VISION 
+By 2030, CDLN is a nationally recognized premier community college in the Visayas Region for higher and advance professional education, technical vocational, and training and development. 
+
+MISSION
+CDLN instills a student-centered environment for transformational learning experience, producing graduates equipped with appropriate knowledge, skills, and attitudes, responsive to the needs of a dynamically changing global society. 
+
+CORE VALUES 
+•Competence 
+•Diversity 
+•Life-Long Learning
+• Nobility.
+
+GOALS 
+1) Implement a curriculum as frontiers of knowledge and inculcate ethics and values. 
+2) Tap competent and committed professionals to ensure quality education.
+3) Continue upgrading teaching and non-teaching personnel through education, training and seminu's. 
+4) Caver to the demands of the students in the attainment of quality education by providing instructions thu are current in content and adopting the state of the art in teaching delivery. 5) Adopt the latest technology and continuous upgrading of facilities; and
+5) Offer programs relevant to the needs of the community towards economic upliftment. 
+
+OBJECTIVES
+1. Provide quality instruction by tapping qualified, competent, and dedicated school personnel utilizing the latest technology and continuously myrading facilities, and manifesting proactive attitude towards at work.
+2. Develop students with outstanding achievements and produce graduates with excellent performance in the related professional licensure   examinations and or in their chosen field. 
+3. Institutionalize a dynamic research program as an aid to effective classroom instruction as well as for the sustainable development of the Municipality of Las Navas and its partner local government units.
+4. Establish and maintain linkage with conumunity-based or people's organizations for partnership undertakings in the implementation of socio-economic development project, programs and activities. 
+5. Coordinate with other local colleges and universitics as well as other institutions for collaboration, cooperation, complementation and convergence necessary for the advancement of Colegio De Las Navas as well as the Municipulity of Las Navas and its partner local government units. 
+6. Initiate and facilitate in providing training and development to the officials and employees as well as leaders and constituents of the Municipality of Las Navas and its partner local government wits. 
+    
+PRINCIPLES/PHILOSOPHY 
+Colegio De Las Navas is committed to the total development of man who shares in shaping human existence of becoming the best of what they are, deeply driven by strong determination for change through continuous learning.

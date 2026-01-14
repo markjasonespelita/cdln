@@ -1,0 +1,45 @@
+name: CI/CD Pipeline
+
+permissions:
+  contents: write   # REQUIRED for tags and GitHub Releases
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+      - develop
+      - master
+
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show branch
+        run: echo "Running CI on ${{ github.ref }}"
+
+      # Uncomment when ready
+      # - name: Run tests
+      #   run: |
+      #     php artisan test
+
+  release:
+    name: Semantic Release (master only)
+    if: github.ref == 'refs/heads/master'
+    needs: ci
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+

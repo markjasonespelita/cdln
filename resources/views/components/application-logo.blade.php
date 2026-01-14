@@ -1,0 +1,1 @@
+<img src="{{ url('design/img/logo/logo.png') }}" alt="">
