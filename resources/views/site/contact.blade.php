@@ -50,33 +50,33 @@
                     </div>
                 </div>
                 <div class="col-lg-5 mb-5">
-                    <p>Labore sea amet kasd diam justo amet ut vero justo. Ipsum ut et kasd duo sit, ipsum sea et erat est dolore, magna ipsum et magna elitr. Accusam accusam lorem magna, eos et sed eirmod dolor est eirmod eirmod amet.</p>
+                    <p>Colegio De Las Navas is committed to the total development of man who shares in shaping human existence of becoming the best of what they are, deeply driven by strong determination for change through continuous learning.</p>
                     <div class="d-flex">
                         <i class="fa fa-map-marker-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Address</h5>
-                            <p>123 Street, New York, USA</p>
+                            <p>{{ env('ADDRESS') }}</p>
                         </div>
                     </div>
                     <div class="d-flex">
                         <i class="fa fa-envelope d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Email</h5>
-                            <p>info@example.com</p>
+                            <p>{{ env('EMAIL') }}</p>
                         </div>
                     </div>
                     <div class="d-flex">
                         <i class="fa fa-phone-alt d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Phone</h5>
-                            <p>+012 345 67890</p>
+                            <p>{{ env('PHONE') }}</p>
                         </div>
                     </div>
                     <div class="d-flex">
                         <i class="far fa-clock d-inline-flex align-items-center justify-content-center bg-primary text-secondary rounded-circle" style="width: 45px; height: 45px;"></i>
                         <div class="pl-3">
                             <h5>Opening Hours</h5>
-                            <strong>Sunday - Friday:</strong>
+                            <strong>Monday - Friday:</strong>
                             <p class="m-0">08:00 AM - 05:00 PM </p>
                         </div>
                     </div>
