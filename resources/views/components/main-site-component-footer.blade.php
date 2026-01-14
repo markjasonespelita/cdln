@@ -7,16 +7,16 @@
                     <span class="text-white">KidKinder</span> --}}
                     <img src="/design/img/logo/logo.jpg" alt="" height="100px" width="100px">
                 </a>
-                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.</p>
+                <p>Colegio De Las Navas is committed to the total development of man who shares in shaping human existence of becoming the best of what they are, deeply driven by strong determination for change through continuous learning.</p>
                 <div class="d-flex justify-content-start mt-4">
+                    {{-- <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a> --}}
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="{{ env('FACEBOOK_PAGE') }}"><i class="fab fa-facebook-f"></i></a>
+                    {{-- <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
                         style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a> --}}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -25,21 +25,21 @@
                     <h4 class="fa fa-map-marker-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Address</h5>
-                        <p>123 Street, New York, USA</p>
+                        <p>{{ env('ADDRESS') }}</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-envelope text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Email</h5>
-                        <p>info@example.com</p>
+                        <p>{{ env('EMAIL') }}</p>
                     </div>
                 </div>
                 <div class="d-flex">
                     <h4 class="fa fa-phone-alt text-primary"></h4>
                     <div class="pl-3">
                         <h5 class="text-white">Phone</h5>
-                        <p>+012 345 67890</p>
+                        <p>{{ env('PHONE') }}</p>
                     </div>
                 </div>
             </div>
@@ -47,11 +47,11 @@
                 <h3 class="text-primary mb-4">Quick Links</h3>
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    {{-- <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
                     <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a> --}}
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
