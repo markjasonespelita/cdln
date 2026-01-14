@@ -70,6 +70,12 @@
                             'label' => 'Users',
                             'active' => request()->is('users', 'create-users', 'trash-users', 'show-users/*', 'edit-users/*', 'delete-users/*', 'users-search*'),
                         ],
+                        [
+                            'url' => 'profiles',
+                            'icon' => 'fas fa-user',
+                            'label' => 'My Profile',
+                            'active' => request()->is('profiles', 'create-profiles', 'trash-profiles', 'show-profiles/*', 'edit-profiles/*', 'delete-profiles/*', 'profiles-search*'),
+                        ],
                     ];
                 }
 
@@ -86,7 +92,13 @@
                             'icon' => 'fas fa-globe',
                             'label' => 'Visit Site',
                             'active' => request()->is('/'),
-                        ]
+                        ],
+                        [
+                            'url' => 'profiles',
+                            'icon' => 'fas fa-user',
+                            'label' => 'My Profile',
+                            'active' => request()->is('profiles', 'create-profiles', 'trash-profiles', 'show-profiles/*', 'edit-profiles/*', 'delete-profiles/*', 'profiles-search*'),
+                        ],
                     ];
                 }
             @endphp

@@ -42,6 +42,12 @@ use App\Models\Departments;
 
 // end of import
 
+use App\Http\Controllers\ProfilesController;
+use App\Models\Profiles;
+
+// end of import
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -261,6 +267,31 @@ Route::middleware([
 
     // Departments Filter
     Route::get('/departments-filter', [DepartmentsController::class, 'filter']);
+
+    // end...
+
+    Route::get('/profiles', [ProfilesController::class, 'index'])->name('profiles.index');
+    Route::get('/create-profiles', [ProfilesController::class, 'create'])->name('profiles.create');
+    Route::get('/edit-profiles/{profilesId}', [ProfilesController::class, 'edit'])->name('profiles.edit');
+    Route::get('/show-profiles/{profilesId}', [ProfilesController::class, 'show'])->name('profiles.show');
+    Route::get('/delete-profiles/{profilesId}', [ProfilesController::class, 'delete'])->name('profiles.delete');
+    Route::get('/destroy-profiles/{profilesId}', [ProfilesController::class, 'destroy'])->name('profiles.destroy');
+    Route::post('/store-profiles', [ProfilesController::class, 'store'])->name('profiles.store');
+    Route::post('/update-profiles/{profilesId}', [ProfilesController::class, 'update'])->name('profiles.update');
+    Route::post('/profiles-delete-all-bulk-data', [ProfilesController::class, 'bulkDelete']);
+    Route::post('/profiles-move-to-trash-all-bulk-data', [ProfilesController::class, 'bulkMoveToTrash']);
+    Route::post('/profiles-restore-all-bulk-data', [ProfilesController::class, 'bulkRestore']);
+    Route::get('/trash-profiles', [ProfilesController::class, 'trash']);
+    Route::get('/restore-profiles/{profilesId}', [ProfilesController::class, 'restore'])->name('profiles.restore');
+
+    // Profiles Search
+    Route::get('/profiles-search', [ProfilesController::class, 'search']);
+
+    // Profiles Paginate
+    Route::get('/profiles-paginate', [ProfilesController::class, 'paginate']);
+
+    // Profiles Filter
+    Route::get('/profiles-filter', [ProfilesController::class, 'filter']);
 
     // end...
 
