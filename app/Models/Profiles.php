@@ -24,6 +24,11 @@ class Profiles extends Model implements Auditable
             'id:' . $this->id,
         ];
     }
+
+    public function users()
+    {
+        return $this->belongsTo(User::class, 'users_id');
+    }
                                             
     use HasFactory;
 }

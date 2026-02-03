@@ -85,4 +85,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Eventcomments::class);
     }
+
+    public function profile()
+    {
+        return $this->hasOne(Profiles::class, 'users_id', 'id');
+    }
 }
