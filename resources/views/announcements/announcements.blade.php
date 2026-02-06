@@ -79,6 +79,8 @@
                             {{-- <th>#</th> --}}
                             <th>Title</th>
                             <th>Slug</th>
+                            <th><i class="fas fa-thumbs-up"></i></th>
+                            <th><i class="fas fa-comment"></i></th>
                             <th>Content</th>
                             <th>Category</th>
                             <th>Attachment</th>
@@ -99,6 +101,8 @@
                                 {{-- <td>{{ $item->id }}</td> --}}
                                 <td>{{ $item->title }}</td>
                                 <td>{{ $item->slug }}</td>
+                                <td><a class="fw-bold text-primary nav-link" href="{{ url('/announcement-details/'.$item->id) }}">{{ App\Models\Announcementreactions::where('announcements_id', $item->id)->count() }}</a></td>
+                                <td><a class="fw-bold text-primary nav-link" href="{{ url('/announcement-details/'.$item->id) }}">{{ App\Models\Announcementcomments::where('announcements_id', $item->id)->count() }}</a></td>
                                 <td>{{ Smark\Smark\Stringer::truncateString($item->content, 20) }}</td>
                                 <td>{{ $item->category }}</td>
                                 <td>

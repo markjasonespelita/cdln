@@ -41,4 +41,14 @@ class Announcements extends Model implements Auditable
     {
         return $this->belongsTo(Departments::class, 'departments_id');
     }
+
+    public function announcementReactions()
+    {
+        return $this->hasMany(Announcementreactions::class);
+    }
+
+    public function announcementOtherFiles()
+    {
+        return $this->hasMany(Announcementotherfiles::class);
+    }
 }

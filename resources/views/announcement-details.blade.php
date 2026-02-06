@@ -67,14 +67,158 @@
                         @endif
                     @endif
 
+                    <div class="d-flex flex-wrap gap-3 mb-3">
+                        @forelse ($item->announcementOtherFiles as $file)
+                            @php
+                                $filename = $file->file;
+                                $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+                                $fileUrl = asset('storage/announcementsOtherFiles/' . $filename);
+                            @endphp
+
+                            <div style="min-width: 150px; max-width: 150px; text-align: center;">
+                                @if (in_array($extension, ['jpg', 'jpeg', 'png', 'gif', 'webp']))
+                                    {{-- Image --}}
+                                    <a href="{{ $fileUrl }}" target="_blank">
+                                        <img src="{{ $fileUrl }}" alt="Image" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+                                    </a>
+                                @elseif ($extension === 'pdf')
+                                    {{-- PDF --}}
+                                    <a href="{{ $fileUrl }}" target="_blank" class="d-block text-danger" style="font-size: 2rem;">
+                                        <i class="fas fa-file-pdf"></i>
+                                        <div>PDF File</div>
+                                    </a>
+                                @else
+                                    {{-- Other files --}}
+                                    <a href="{{ $fileUrl }}" target="_blank" class="d-block text-secondary" style="font-size: 2rem;">
+                                        <i class="fas fa-file"></i>
+                                        <div>{{ strtoupper($extension) }} File</div>
+                                    </a>
+                                @endif
+                            </div>
+                        @empty
+                            <span class="text-muted fst-italic">No other files uploaded.</span>
+                        @endforelse
+                    </div>
+
                     {{-- 📝 Content --}}
                     <p class="fs-5 mt-3">{{ $item->content }}</p>
 
-                    <b>Departmentt: {{ $item->departments->name ?? "no data" }}</b> <br>
+                    <b>Department: {{ $item->departments->name ?? "no data" }}</b> <br>
                     <b>Semester: {{ ($item->semester === 1) ? "1st Semester" : "2nd Semester" }}</b> <br>
                     <b>Published At: {{ ($item->published_at) ? Smark\Smark\Dater::humanReadableDateWithDayAndTime($item->published_at) : "No Data" }}</b> <br>
                     <b>Expires At: {{ ($item->expires_at) ? Smark\Smark\Dater::humanReadableDateWithDayAndTime($item->expires_at) : "No Data" }}</b>
                 </div>
+
+                <div class="my-2">
+                    @if ($reactionCount > 0)
+                        <b style="cursor:pointer;" onclick="openReactionModal()">
+                            @if ($hasReacted)
+                                You and {{ $reactionCount - 1 }} other {{ Str::plural('person', $reactionCount - 1) }} reacted to this announcement
+                            @else
+                                {{ $reactionCount }} {{ Str::plural('person', $reactionCount) }} reacted to this announcement
+                            @endif
+                        </b>
+                    @else
+                        <b>No reactions yet</b>
+                    @endif
+                </div>
+
+                {{-- Reactors Modal --}}
+                <div class="modal fade" id="reactionModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title">People who reacted</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            @foreach ($reactions as $reaction)
+                                <div class="d-flex align-items-center mb-2">
+                                    <img src="{{ $reaction->users->profile_photo_url ?? asset('default-avatar.png') }}"
+                                        class="rounded-circle me-2"
+                                        width="40" height="40">
+                                    <div>{{ $reaction->users->name }}</div>
+                                </div>
+                            @endforeach
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mb-3">
+
+                    {{-- REACT BOX (show only if NOT reacted yet) --}}
+                    @if (!$hasReacted)
+                        <div class="col-6">
+                            <a href="{{ route('announcementreactions.store', $item->id) }}">
+                                <div class="card border-success">
+                                    <div class="card-body text-center" style="font-size: 28px">
+                                        <i class="far fa-thumbs-up text-success"></i>
+                                        <div style="font-size:14px;">React</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
+
+
+                    {{-- UNREACT BOX (show only if already reacted) --}}
+                    @if ($hasReacted)
+                        <div class="col-6">
+                            <a href="{{ route('announcementreactions.remove', $item->id) }}">
+                                <div class="card border-danger">
+                                    <div class="card-body text-center" style="font-size: 28px">
+                                        <i class="fas fa-thumbs-down text-danger"></i>
+                                        <div style="font-size:14px;">Remove Reaction</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endif
+
+
+                    {{-- SHARE BOX (always visible) --}}
+                    <div class="col-6">
+                        <a href="javascript:void(0)" onclick="openShareModal('{{ url()->current() }}')">
+                            <div class="card">
+                                <div class="card-body text-center" style="font-size: 28px">
+                                    <i class="fas fa-share"></i>
+                                    <div style="font-size:14px;">Share</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    {{-- Modal --}}
+                    <div class="modal fade" id="shareModal" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Share this announcement</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="input-group">
+                                    <input type="text" id="shareLink" class="form-control" readonly>
+                                    <button class="btn btn-primary" onclick="copyLink()">Copy</button>
+                                    </div>
+                                    <small class="text-muted">Anyone with this link can view it.</small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
 
                 <!-- Related Post -->
                 <div class="mb-5 mx-n3">
@@ -394,4 +538,33 @@
         </div>
     </div>
     <!-- Detail End -->
+
+    <script>
+        function openShareModal(link) {
+            document.getElementById('shareLink').value = link;
+
+            var modal = new bootstrap.Modal(document.getElementById('shareModal'));
+            modal.show();
+        }
+
+        function copyLink() {
+            var copyText = document.getElementById("shareLink");
+
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // mobile support
+
+            navigator.clipboard.writeText(copyText.value).then(function() {
+                alert("Link copied to clipboard!");
+            }, function() {
+                alert("Failed to copy link.");
+            });
+        }
+    </script>
+
+    <script>
+        function openReactionModal() {
+            var modal = new bootstrap.Modal(document.getElementById('reactionModal'));
+            modal.show();
+        }
+    </script>
 @endsection

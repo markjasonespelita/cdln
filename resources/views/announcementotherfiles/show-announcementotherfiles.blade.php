@@ -1,0 +1,45 @@
+
+@extends('layouts.main')
+
+@section('content')
+    <h1>Announcementotherfiles Details</h1>
+
+    <div class='card'>
+        <div class='card-body'>
+            <div class='table-responsive'>
+                <table class='table'>
+                    <tr>
+                        <th>ID</th>
+                        <td>{{ $item->id }}</td>
+                    </tr>
+                    
+        <tr>
+            <th>Announcements_id</th>
+            <td>{{ $item->announcements_id }}</td>
+        </tr>
+    
+        <tr>
+            <th>Users_id</th>
+            <td>{{ $item->users_id }}</td>
+        </tr>
+    
+        <tr>
+            <th>File</th>
+            <td>{{ $item->file }}</td>
+        </tr>
+    
+                    <tr>
+                        <th>Created At</th>
+                        <td>{{ Smark\Smark\Dater::humanReadableDateWithDayAndTime($item->created_at) }}</td>
+                    </tr>
+                    <tr>
+                        <th>Updated At</th>
+                        <td>{{ Smark\Smark\Dater::humanReadableDateWithDayAndTime($item->updated_at) }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <a href='{{ route('announcementotherfiles.index') }}' class='btn btn-primary'>Back to List</a>
+@endsection

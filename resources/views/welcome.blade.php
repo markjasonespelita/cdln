@@ -393,6 +393,11 @@
                     @forelse (App\Models\Announcements::where('status', 'published')->where('departments_id', $department->id)->get() as $announcement)
                         <div class="testimonial-item px-3">
                             <div class="bg-light shadow-sm rounded mb-4 p-4">
+                                @php
+                                    $filename = $announcement->attachment_path; // Adjust to your model attribute
+                                    $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+                                    $fileUrl = asset('storage/announcementsOtherFiles/' . $filename); // adjust path
+                                @endphp
                                 <h3 class="fas fa-quote-left text-primary mr-3"> {{ $announcement->title }}</h3>
                                 {{ Smark\Smark\Stringer::truncateString($announcement->content, 50) }}
                             </div>

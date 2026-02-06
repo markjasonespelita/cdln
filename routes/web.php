@@ -47,6 +47,18 @@ use App\Models\Profiles;
 
 // end of import
 
+use App\Http\Controllers\AnnouncementreactionsController;
+use App\Models\Announcementreactions;
+
+// end of import
+
+use App\Http\Controllers\AnnouncementotherfilesController;
+use App\Models\Announcementotherfiles;
+
+// end of import
+
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -292,6 +304,62 @@ Route::middleware([
 
     // Profiles Filter
     Route::get('/profiles-filter', [ProfilesController::class, 'filter']);
+
+    // end...
+
+    Route::get('/announcementreactions', [AnnouncementreactionsController::class, 'index'])->name('announcementreactions.index');
+    Route::get('/create-announcementreactions', [AnnouncementreactionsController::class, 'create'])->name('announcementreactions.create');
+    Route::get('/edit-announcementreactions/{announcementreactionsId}', [AnnouncementreactionsController::class, 'edit'])->name('announcementreactions.edit');
+    Route::get('/show-announcementreactions/{announcementreactionsId}', [AnnouncementreactionsController::class, 'show'])->name('announcementreactions.show');
+    Route::get('/delete-announcementreactions/{announcementreactionsId}', [AnnouncementreactionsController::class, 'delete'])->name('announcementreactions.delete');
+    Route::get('/destroy-announcementreactions/{announcementreactionsId}', [AnnouncementreactionsController::class, 'destroy'])->name('announcementreactions.destroy');
+
+    Route::get('/store-announcementreactions/{annoucements_id}', [AnnouncementreactionsController::class, 'store'])->name('announcementreactions.store');
+    Route::get('/remove-announcementreactions/{annoucements_id}', [AnnouncementreactionsController::class, 'remove'])->name('announcementreactions.remove');
+
+    Route::post('/update-announcementreactions/{announcementreactionsId}', [AnnouncementreactionsController::class, 'update'])->name('announcementreactions.update');
+    Route::post('/announcementreactions-delete-all-bulk-data', [AnnouncementreactionsController::class, 'bulkDelete']);
+    Route::post('/announcementreactions-move-to-trash-all-bulk-data', [AnnouncementreactionsController::class, 'bulkMoveToTrash']);
+    Route::post('/announcementreactions-restore-all-bulk-data', [AnnouncementreactionsController::class, 'bulkRestore']);
+    Route::get('/trash-announcementreactions', [AnnouncementreactionsController::class, 'trash']);
+    Route::get('/restore-announcementreactions/{announcementreactionsId}', [AnnouncementreactionsController::class, 'restore'])->name('announcementreactions.restore');
+
+    // Announcementreactions Search
+    Route::get('/announcementreactions-search', [AnnouncementreactionsController::class, 'search']);
+
+    // Announcementreactions Paginate
+    Route::get('/announcementreactions-paginate', [AnnouncementreactionsController::class, 'paginate']);
+
+    // Announcementreactions Filter
+    Route::get('/announcementreactions-filter', [AnnouncementreactionsController::class, 'filter']);
+
+    // end...
+
+    Route::get('/announcementotherfiles', [AnnouncementotherfilesController::class, 'index'])->name('announcementotherfiles.index');
+    Route::get('/create-announcementotherfiles', [AnnouncementotherfilesController::class, 'create'])->name('announcementotherfiles.create');
+    Route::get('/edit-announcementotherfiles/{announcementotherfilesId}', [AnnouncementotherfilesController::class, 'edit'])->name('announcementotherfiles.edit');
+    Route::get('/show-announcementotherfiles/{announcementotherfilesId}', [AnnouncementotherfilesController::class, 'show'])->name('announcementotherfiles.show');
+    Route::get('/delete-announcementotherfiles/{announcementotherfilesId}', [AnnouncementotherfilesController::class, 'delete'])->name('announcementotherfiles.delete');
+
+    Route::delete('/destroy-announcementotherfiles/{announcementotherfilesId}', [AnnouncementotherfilesController::class, 'destroy'])->name('announcementotherfiles.destroy');
+
+    Route::post('/store-announcementotherfiles/{announcementsId}', [AnnouncementotherfilesController::class, 'store'])->name('announcementotherfiles.store');
+
+    Route::post('/update-announcementotherfiles/{announcementotherfilesId}', [AnnouncementotherfilesController::class, 'update'])->name('announcementotherfiles.update');
+    Route::post('/announcementotherfiles-delete-all-bulk-data', [AnnouncementotherfilesController::class, 'bulkDelete']);
+    Route::post('/announcementotherfiles-move-to-trash-all-bulk-data', [AnnouncementotherfilesController::class, 'bulkMoveToTrash']);
+    Route::post('/announcementotherfiles-restore-all-bulk-data', [AnnouncementotherfilesController::class, 'bulkRestore']);
+    Route::get('/trash-announcementotherfiles', [AnnouncementotherfilesController::class, 'trash']);
+    Route::get('/restore-announcementotherfiles/{announcementotherfilesId}', [AnnouncementotherfilesController::class, 'restore'])->name('announcementotherfiles.restore');
+
+    // Announcementotherfiles Search
+    Route::get('/announcementotherfiles-search', [AnnouncementotherfilesController::class, 'search']);
+
+    // Announcementotherfiles Paginate
+    Route::get('/announcementotherfiles-paginate', [AnnouncementotherfilesController::class, 'paginate']);
+
+    // Announcementotherfiles Filter
+    Route::get('/announcementotherfiles-filter', [AnnouncementotherfilesController::class, 'filter']);
 
     // end...
 

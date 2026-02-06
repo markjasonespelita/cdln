@@ -24,6 +24,7 @@ yarn-error.log
 /public/storage/livewire-tmp
 
 /public/storage/announcements
+/public/storage/announcementsOtherFiles
 /public/storage/files
 /public/storage/files/chat_uploads
 /public/storage/profile-photos

@@ -90,4 +90,14 @@ class User extends Authenticatable
     {
         return $this->hasOne(Profiles::class, 'users_id', 'id');
     }
+
+    public function announcementReactions()
+    {
+        return $this->hasMany(Announcementreactions::class);
+    }
+
+    public function announcementOtherFiles()
+    {
+        return $this->hasMany(Announcementotherfiles::class);
+    }
 }

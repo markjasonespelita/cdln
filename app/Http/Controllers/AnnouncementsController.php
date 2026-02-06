@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{Logs, Announcements};
+use App\Models\{Announcementotherfiles, Logs, Announcements};
 use App\Http\Requests\StoreAnnouncementsRequest;
 use App\Http\Requests\UpdateAnnouncementsRequest;
 use Illuminate\Http\Request;
@@ -23,8 +23,21 @@ class AnnouncementsController extends Controller {
 
     public function details($announcementsId)
     {
+        $hasReacted = \App\Models\Announcementreactions::where('announcements_id', $announcementsId)
+        ->where('users_id', Auth::id())
+        ->exists();
+
+        $reactionCount = \App\Models\Announcementreactions::where('announcements_id', $announcementsId)->count();
+
+        $reactions = \App\Models\Announcementreactions::with('users')
+            ->where('announcements_id', $announcementsId)
+            ->get();
+
         return view('announcement-details', [
-            'item' => Announcements::where('id', $announcementsId)->first()
+            'item' => Announcements::where('id', $announcementsId)->first(),
+            'hasReacted' => $hasReacted,
+            'reactionCount' => $reactionCount,
+            'reactions' => $reactions
         ]);
     }
 
@@ -84,8 +97,11 @@ class AnnouncementsController extends Controller {
      */
     public function show(Announcements $announcements, $announcementsId)
     {
+        $otherFiles = Announcementotherfiles::where('announcements_id', $announcementsId)->get();
+
         return view('announcements.show-announcements', [
-            'item' => Announcements::where('id', $announcementsId)->first()
+            'item' => Announcements::where('id', $announcementsId)->first(),
+            'otherFiles' => $otherFiles,  // pass the files explicitly if you want
         ]);
     }
 

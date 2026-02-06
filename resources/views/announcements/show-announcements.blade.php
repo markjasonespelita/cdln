@@ -92,6 +92,171 @@
                 </tr>
 
                 <tr>
+                    <th>Other Files</th>
+                    <td>
+                        <div class="d-flex flex-wrap gap-3 mb-3">
+                            @forelse ($otherFiles as $file)
+                                @php
+                                    $filename = $file->file; // Adjust to your model attribute
+                                    $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+                                    $fileUrl = asset('storage/announcementsOtherFiles/' . $filename); // adjust path
+                                @endphp
+
+                                <div style="min-width: 150px; max-width: 150px; text-align: center;">
+
+                                    {{-- Delete Button --}}
+                                    <!-- Trash Button triggers this file's modal -->
+                                    <div style="text-align: right; font-size: 12px">
+                                        <button 
+                                            class="btn btn-sm btn-danger top-0 end-0 m-1"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#{{ $file->id }}"
+                                            type="button"
+                                        >
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+
+                                    @if (in_array($extension, ['jpg', 'jpeg', 'png', 'gif', 'webp']))
+                                        {{-- 🖼 Image --}}
+                                        <a href="{{ $fileUrl }}" target="_blank">
+                                            <img src="{{ $fileUrl }}" alt="Image" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+                                        </a>
+                                    @elseif ($extension === 'pdf')
+                                        {{-- 📄 PDF --}}
+                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-danger" style="font-size: 2rem;">
+                                            <i class="fas fa-file-pdf"></i>
+                                            <div>PDF File</div>
+                                        </a>
+                                    @elseif (in_array($extension, ['doc', 'docx']))
+                                        {{-- 🧾 Word --}}
+                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-primary" style="font-size: 2rem;">
+                                            <i class="fas fa-file-word"></i>
+                                            <div>Word File</div>
+                                        </a>
+                                    @elseif (in_array($extension, ['xls', 'xlsx']))
+                                        {{-- 📊 Excel --}}
+                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-success" style="font-size: 2rem;">
+                                            <i class="fas fa-file-excel"></i>
+                                            <div>Excel File</div>
+                                        </a>
+                                    @elseif (in_array($extension, ['ppt', 'pptx']))
+                                        {{-- 📈 PowerPoint --}}
+                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-warning" style="font-size: 2rem;">
+                                            <i class="fas fa-file-powerpoint"></i>
+                                            <div>PowerPoint File</div>
+                                        </a>
+                                    @elseif (in_array($extension, ['mp3', 'wav', 'ogg']))
+                                        {{-- 🎵 Audio --}}
+                                        <audio controls style="width: 100%;">
+                                            <source src="{{ $fileUrl }}" type="audio/{{ $extension }}">
+                                            Your browser does not support the audio element.
+                                        </audio>
+                                    @elseif (in_array($extension, ['mp4', 'mov', 'avi', 'mkv']))
+                                        {{-- 🎬 Video --}}
+                                        <video controls width="150" style="border-radius: 8px;">
+                                            <source src="{{ $fileUrl }}" type="video/{{ $extension }}">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    @else
+                                        {{-- 📦 Other --}}
+                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-secondary" style="font-size: 2rem;">
+                                            <i class="fas fa-file"></i>
+                                            <div>{{ strtoupper($extension) }} File</div>
+                                        </a>
+                                    @endif
+                                </div>
+
+                                <!-- Modal specific to this file -->
+                                <div class="modal fade" id="{{ $file->id }}" tabindex="-1" aria-labelledby="{{ $file->id }}Label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <form method="POST" action="{{ route('announcementotherfiles.destroy', $file->id) }}">
+                                            @csrf
+                                            @method('DELETE')
+
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="{{ $file->id }}Label">Confirm Delete</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete this file? <br>
+
+                                                    @if (in_array($extension, ['jpg', 'jpeg', 'png', 'gif', 'webp']))
+                                                        {{-- 🖼 Image --}}
+                                                        <a href="{{ $fileUrl }}" target="_blank">
+                                                            <img src="{{ $fileUrl }}" alt="Image" style="width: 150px; height: 150px; object-fit: cover; border-radius: 8px;">
+                                                        </a>
+                                                    @elseif ($extension === 'pdf')
+                                                        {{-- 📄 PDF --}}
+                                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-danger" style="font-size: 2rem;">
+                                                            <i class="fas fa-file-pdf"></i>
+                                                            <div>PDF File</div>
+                                                        </a>
+                                                    @elseif (in_array($extension, ['doc', 'docx']))
+                                                        {{-- 🧾 Word --}}
+                                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-primary" style="font-size: 2rem;">
+                                                            <i class="fas fa-file-word"></i>
+                                                            <div>Word File</div>
+                                                        </a>
+                                                    @elseif (in_array($extension, ['xls', 'xlsx']))
+                                                        {{-- 📊 Excel --}}
+                                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-success" style="font-size: 2rem;">
+                                                            <i class="fas fa-file-excel"></i>
+                                                            <div>Excel File</div>
+                                                        </a>
+                                                    @elseif (in_array($extension, ['ppt', 'pptx']))
+                                                        {{-- 📈 PowerPoint --}}
+                                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-warning" style="font-size: 2rem;">
+                                                            <i class="fas fa-file-powerpoint"></i>
+                                                            <div>PowerPoint File</div>
+                                                        </a>
+                                                    @elseif (in_array($extension, ['mp3', 'wav', 'ogg']))
+                                                        {{-- 🎵 Audio --}}
+                                                        <audio controls style="width: 100%;">
+                                                            <source src="{{ $fileUrl }}" type="audio/{{ $extension }}">
+                                                            Your browser does not support the audio element.
+                                                        </audio>
+                                                    @elseif (in_array($extension, ['mp4', 'mov', 'avi', 'mkv']))
+                                                        {{-- 🎬 Video --}}
+                                                        <video controls width="150" style="border-radius: 8px;">
+                                                            <source src="{{ $fileUrl }}" type="video/{{ $extension }}">
+                                                            Your browser does not support the video tag.
+                                                        </video>
+                                                    @else
+                                                        {{-- 📦 Other --}}
+                                                        <a href="{{ $fileUrl }}" target="_blank" class="d-block text-secondary" style="font-size: 2rem;">
+                                                            <i class="fas fa-file"></i>
+                                                            <div>{{ strtoupper($extension) }} File</div>
+                                                        </a>
+                                                    @endif
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                    <a href="{{ url('destroy-announcementotherfiles/'.$file->id) }}"><button type="submit" class="btn btn-danger">Yes, Delete</button></a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            @empty
+                                <span class="text-muted fst-italic">No other files uploaded.</span>
+                            @endforelse
+                        </div>
+
+                        <form action="{{ route('announcementotherfiles.store', $item->id) }}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <input type="file" name="file" multiple>
+                            <button type="submit" class="btn btn-primary btn-sm mt-2">Upload</button>
+                        </form>
+                    </td>
+                </tr>
+
+
+                <tr>
                     <th>Published At</th>
                     <td>
                         {{ $item->published_at
