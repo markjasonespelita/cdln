@@ -60,6 +60,8 @@ class ProfilesController extends Controller {
             'firstname' => $request->firstname,
             'lastname' => $request->lastname,
             'gender' => $request->gender,
+            'departments_id' => $request->departments_id,
+            'year' => $request->year,
             'birthdate' => $request->birthdate,
             'phonenumber' => $request->phonenumber,
             'address' => $request->address,
@@ -102,6 +104,8 @@ class ProfilesController extends Controller {
         $profiles->firstname = $request->firstname;
         $profiles->lastname = $request->lastname;
         $profiles->gender = $request->gender;
+        $profiles->departments_id = $request->departments_id;
+        $profiles->year = $request->year;
         $profiles->birthdate = $request->birthdate;
         $profiles->phonenumber = $request->phonenumber;
         $profiles->address = $request->address;

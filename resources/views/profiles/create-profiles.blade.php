@@ -32,6 +32,31 @@
                             <option value="female">Female</option>
                             <option value="other">Other</option>
                         </select>
+
+                        <div class="my-3">
+                            <label for="">Course and Year</label>
+                            <div class="row my-2">
+                                <div class="col-6">
+                                    <select class="form-control" id="department" name="departments_id">
+                                        <option value="" disabled selected>-- Select Department --</option>
+                                        @forelse (App\Models\Departments::all() as $department)
+                                            <option value="{{ $department->id }}">{{ $department->name }}</option>
+                                        @empty
+                                            <option value="0">No Department Available</option>
+                                        @endforelse
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select name="year" class="form-select" required>
+                                        <option value="">Select year</option>
+                                        <option value="1">1st</option>
+                                        <option value="2">2nd</option>
+                                        <option value="3">3rd</option>
+                                        <option value="4">4th</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-md-4 mb-3">

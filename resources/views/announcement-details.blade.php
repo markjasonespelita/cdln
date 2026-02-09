@@ -14,6 +14,7 @@
         <div class="row pt-5">
             <div class="col-lg-8">
                 <div class="d-flex flex-column text-left mb-3">
+                    <b>Posted: {{ $item->created_at->diffForHumans() }}</b> <br>
                     <p class="section-title pr-5"><span class="pr-2">Announcement</span></p>
                     <h1 class="mb-3">{{ $item->title }}</h1>
                     <div class="d-flex">
@@ -130,7 +131,7 @@
 
                         <div class="modal-header">
                             <h5 class="modal-title">People who reacted</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
                         </div>
 
                         <div class="modal-body">

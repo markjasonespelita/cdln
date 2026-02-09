@@ -11,7 +11,7 @@ class Profiles extends Model implements Auditable
 {
     /** @use HasFactory<\Database\Factories\ProfilesFactory> */
 
-    protected $fillable = ["firstname","lastname","gender","birthdate","phonenumber","address","mothersname","fathersname","emergency_contact", "users_id", "isTrash"]; 
+    protected $fillable = ["firstname","lastname","gender","departments_id", "year", "birthdate","phonenumber","address","mothersname","fathersname","emergency_contact", "users_id", "isTrash"]; 
 
 
     use \OwenIt\Auditing\Auditable;
@@ -28,6 +28,11 @@ class Profiles extends Model implements Auditable
     public function users()
     {
         return $this->belongsTo(User::class, 'users_id');
+    }
+
+    public function departments()
+    {
+        return $this->belongsTo(Departments::class, 'departments_id');
     }
                                             
     use HasFactory;

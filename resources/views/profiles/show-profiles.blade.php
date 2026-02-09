@@ -40,7 +40,19 @@
                     @endif
 
                     <h5 class="mb-0">{{ $item->firstname }} {{ $item->lastname }}</h5>
-                    <small class="text-muted">{{ ucfirst($item->gender) }}</small>
+                    <small class="text-muted">{{ ucfirst($item->gender) }}</small> <br>
+                    <b>
+                        {{ optional($item->departments)->name ?? "Not Available" }}
+                        - {{ \Illuminate\Support\Str::of($item->year)->append(match($item->year % 100) {
+                            11,12,13 => 'th',
+                            default => match($item->year % 10) {
+                                1 => 'st',
+                                2 => 'nd',
+                                3 => 'rd',
+                                default => 'th'
+                            }
+                        }) }} Year
+                    </b>
 
                     <div class="mt-3">
                         <a href="{{ url('/user/profile') }}"

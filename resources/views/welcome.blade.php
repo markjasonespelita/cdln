@@ -388,17 +388,19 @@
                 <h1 class="mb-4">Our Announcements</h1>
             </div>
             @forelse (App\Models\Departments::all() as $department)
-                <h4 class="mb-4">{{ $department->name }} Announcements</h4>
+                <h4 class="mb-4 mt-5">{{ $department->name }} Announcements</h4>
                 <div class="owl-carousel testimonial-carousel">
                     @forelse (App\Models\Announcements::where('status', 'published')->where('departments_id', $department->id)->get() as $announcement)
                         <div class="px-3 testimonial-item">
                             <div class="p-4 mb-4 rounded shadow-sm bg-light">
+                                
+                                <b>Posted: {{ $announcement->created_at->diffForHumans() }}</b> <br>
                                 @php
                                     $filename = $announcement->attachment_path; // Adjust to your model attribute
                                     $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
                                     $fileUrl = asset('storage/announcementsOtherFiles/' . $filename); // adjust path
                                 @endphp
-                                <h3 class="mr-3 fas fa-quote-left text-primary"> {{ $announcement->title }}</h3>
+                                <h3 class="mr-3 fas fa-quote-left text-primary"> {{ $announcement->title }}</h3> <br>
                                 {{ Smark\Smark\Stringer::truncateString($announcement->content, 150) }}
                             </div>
                             <div class="d-flex align-items-center">
@@ -456,6 +458,7 @@
                 @forelse (App\Models\Events::all() as $event)
                     <div class="px-3 testimonial-item">
                         <div class="p-4 mb-4 rounded shadow-sm bg-light">
+                            <b>Posted: {{ $event->created_at->diffForHumans() }}</b> <br>
                             <h3 class="mr-3 fas fa-quote-left text-primary"> {{ $event->title }}</h3>
                             {{ Smark\Smark\Stringer::truncateString($event->description, 50) }}
                         </div>

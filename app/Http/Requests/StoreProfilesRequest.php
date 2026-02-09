@@ -23,7 +23,17 @@ class StoreProfilesRequest extends FormRequest
     {
         return [
             //
-'firstname' => 'required','lastname' => 'required','gender' => 'required','birthdate' => 'required','phonenumber' => 'required','address' => 'required','mothersname' => 'required','fathersname' => 'required','emergency_contact' => 'required',
+            'firstname' => 'required',
+            'lastname' => 'required',
+            'gender' => 'required',
+            'departments_id' => 'required',
+            'year' => 'required',
+            'birthdate' => 'required',
+            'phonenumber' => 'required',
+            'address' => 'required',
+            'mothersname' => 'required',
+            'fathersname' => 'required',
+            'emergency_contact' => 'required',
         ];
     }
 }

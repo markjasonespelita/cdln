@@ -51,6 +51,46 @@
                     </div>
                 </div>
             </div>
+        @else
+            <div class="card shadow-sm border-0">
+                <div class="card-body text-center p-4">
+
+                    <h4 class="mb-3 text-success">
+                        🎉 Welcome, {{ auth()->user()->name }}!
+                    </h4>
+
+                    <p class="mb-2">
+                        Your account has been <strong>successfully created</strong> and 
+                        <span class="text-success fw-bold">approved by the admin</span>.
+                    </p>
+
+                    <p class="mb-3">
+                        You can now <strong>comment</strong> and <strong>react</strong> to 
+                        announcements and events.
+                    </p>
+
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-globe"></i> Explore the website!
+                    </a>
+
+                    <hr>
+
+                    @php
+                        $hasProfile = \App\Models\Profiles::where('users_id', auth()->id())->exists();
+                    @endphp
+
+                    @if(!$hasProfile)
+                        <p class="mb-2">
+                            Don’t have a profile yet?
+                        </p>
+                        <a href="{{ route('profiles.create') }}" class="btn btn-primary">
+                            Create Your Profile
+                        </a>
+                    @endif
+
+                </div>
+            </div>
         @endif
+
     </div>
 @endsection

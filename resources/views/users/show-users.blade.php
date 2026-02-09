@@ -102,8 +102,31 @@
                         </div>
                     @endif
 
-                    <h5 class="mb-0">{{ $item->firstname }} {{ $item->lastname }}</h5>
+                    <h5 class="mb-0">{{ App\Models\Profiles::where('users_id', $item->id)->value('firstname') }} {{ App\Models\Profiles::where('users_id', $item->id)->value('lastname')}}</h5>
                     <small class="text-muted">{{ ucfirst($item->gender) }}</small>
+                    
+                    @php
+                        $profile = App\Models\Profiles::where('users_id', $item->id)->first();
+                    @endphp
+
+                    <b>
+                    @if (!$profile || !$profile->departments_id || !$profile->year)
+                        This user hasn’t set up his/her profile
+                    @else
+                        {{ App\Models\Departments::find($profile->departments_id)?->name ?? 'Not Available' }}
+                        - {{ $profile->year }}@php
+                            $y = $profile->year;
+                            echo match(true) {
+                                in_array($y % 100, [11,12,13]) => 'th',
+                                $y % 10 === 1 => 'st',
+                                $y % 10 === 2 => 'nd',
+                                $y % 10 === 3 => 'rd',
+                                default => 'th'
+                            };
+                        @endphp Year
+                    @endif
+                    </b>
+
 
                     <div class="mt-3">
                         <a href="{{ url('/user/profile') }}"
@@ -111,10 +134,12 @@
                             <i class="fas fa-edit"></i> Edit Profile Photo
                         </a>
 
-                        <a href="{{ route('profiles.edit', $item->id) }}"
-                           class="btn btn-sm btn-outline-info w-100 mb-2">
-                            <i class="fas fa-edit"></i> Edit Profile
-                        </a>
+                        @if (Auth::id() === optional($item->users)->id)
+                            <a href="{{ route('profiles.edit', $item->id) }}"
+                            class="btn btn-sm btn-outline-info w-100 mb-2">
+                                <i class="fas fa-edit"></i> Edit Profile
+                            </a>
+                        @endif
 
                         {{-- <a href="{{ route('profiles.delete', $item->id) }}"
                            class="btn btn-sm btn-outline-danger w-100">
@@ -138,8 +163,8 @@
                                 <td>{{ Smark\Smark\Dater::humanReadableDateWithDay(App\Models\Profiles::where('users_id', $item->id)->value('birthdate')) }}</td>
                             </tr>
                             <tr>
-                                <th>Phone Number</th>
-                                <td>{{ App\Models\Profiles::where('users_id', $item->id)->value('phonenumber') }}</td>
+                                <th>Phone Number (Click to Call)</th>
+                                <td><a class="text-primary nav-link fw-bold" href="tel:{{ App\Models\Profiles::where('users_id', $item->id)->value('phonenumber') }}">{{ App\Models\Profiles::where('users_id', $item->id)->value('phonenumber') }}</a></td>
                             </tr>
                             <tr>
                                 <th>Address</th>
@@ -163,8 +188,8 @@
                                 <td>{{ App\Models\Profiles::where('users_id', $item->id)->value('fathersname') }}</td>
                             </tr>
                             <tr>
-                                <th>Emergency Contact</th>
-                                <td>{{ App\Models\Profiles::where('users_id', $item->id)->value('emergency_contact') }}</td>
+                                <th>Emergency Contact (Click To Call)</th>
+                                <td><a class="text-primary nav-link fw-bold" href="tel:{{ App\Models\Profiles::where('users_id', $item->id)->value('emergency_contact') }}">{{ App\Models\Profiles::where('users_id', $item->id)->value('emergency_contact') }}</a></td>
                             </tr>
                         </table>
                     </div>

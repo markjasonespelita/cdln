@@ -14,6 +14,7 @@
         <div class="row pt-5">
             <div class="col-lg-8">
                 <div class="d-flex flex-column text-left mb-3">
+                    <b>Posted: {{ $item->created_at->diffForHumans() }}</b> <br>
                     <p class="section-title pr-5"><span class="pr-2">Event</span></p>
                     <h1 class="mb-3">{{ $item->title }}</h1>
                     <div class="d-flex">

@@ -29,6 +29,11 @@ class Departments extends Model implements Auditable
     {
         return $this->hasMany(Announcements::class);
     }
+
+    public function profiles()
+    {
+        return $this->hasMany(Profiles::class);
+    }
                                             
     use HasFactory;
 }

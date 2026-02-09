@@ -77,7 +77,9 @@
                             </th>
                             <th></th>
                             <th>Name</th>
-                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Year</th>
+                            <th>Email (Click to send an email)</th>
                             <th>Role</th>
                             <th>Approved</th>
                             <th>Actions</th>
@@ -86,6 +88,24 @@
 
                     <tbody>
                         @forelse($users as $item)
+
+                            @php
+                                $profile = \App\Models\Profiles::where('users_id', $item->id)->first();
+                                $department = $profile ? \App\Models\Departments::find($profile->departments_id) : null;
+                                $y = $profile?->year;
+
+                                $yearOrdinal = null;
+                                if ($y) {
+                                    $yearOrdinal = $y . match(true) {
+                                        in_array($y % 100, [11,12,13]) => 'th',
+                                        $y % 10 === 1 => 'st',
+                                        $y % 10 === 2 => 'nd',
+                                        $y % 10 === 3 => 'rd',
+                                        default => 'th'
+                                    };
+                                }
+                            @endphp
+
                             <tr>
                                 <th scope='row'>
                                     <input type='checkbox' name='' id='' class='check' data-id='{{ $item->id }}'>
@@ -117,7 +137,17 @@
                                 </td>
                                 
                                 <td>{{ $item->name }}</td>
-                                <td>{{ $item->email }}</td>
+                                <td>
+                                    {{ $department?->name ?? 'Not set' }}
+                                </td>
+                                <td>
+                                    @if(!$profile || !$department || !$y)
+                                        <b class="text-secondary">This user hasn’t set up his/her profile</b>
+                                    @else
+                                        {{ $yearOrdinal }} Year
+                                    @endif
+                                </td>
+                                <td><a class="text-primary fw-bold nav-link" href="mailto:{{ $item->email }}">{{ $item->email }}</a></td>
                                 <td>{{ $item->role }}</td>
                                 <td>
                                     @if ($item->isApproved)
