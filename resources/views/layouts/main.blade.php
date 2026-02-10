@@ -16,6 +16,8 @@
         <link href='{{ url('assets/font-awesome/css/all.min.css') }}' rel='stylesheet'>
         <link rel='stylesheet' href='{{ url('assets/custom/style.css') }}'>
         <link rel='icon' href='{{ url('design/img/logo/logo.jpg') }}'>
+        <!-- Styles -->
+        @livewireStyles
     </head>
     <body class='font-sans antialiased'>
 
@@ -929,7 +931,7 @@
         </script>
 
         <script src="{{ url('assets/angular/angular.min.js') }}"></script>
-
         
+        @livewireScripts
     </body>
 </html>

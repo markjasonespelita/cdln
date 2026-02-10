@@ -379,10 +379,12 @@
     </div>
     <!-- Team End --> --}}
 
-
     <!-- Testimonial Start -->
     <div class="py-5 container-fluid">
         <div class="container p-0">
+            <div>
+                @livewire('model-search')
+            </div>
             <div class="pb-2 text-center">
                 <p class="px-5 section-title"><span class="px-2">Announcements</span></p>
                 <h1 class="mb-4">Our Announcements</h1>
