@@ -48,7 +48,7 @@
 
 
     <!-- Facilities Start -->
-    <div class="container-fluid pt-5">
+    {{-- <div class="container-fluid pt-5">
         <div class="container pb-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6 pb-1">
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Facilities Start -->
 
 
@@ -118,8 +118,11 @@
                 <p class="section-title px-5"><span class="px-2">Our Teachers</span></p>
                 <h1 class="mb-4">Meet Our Teachers</h1>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-5">
+            {{-- <div class="row"> --}}
+                <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                    <img src="{{ url('assets/teachers.jpg') }}" alt="" style="width: 70%;">
+                </div>
+                {{-- <div class="col-md-6 col-lg-3 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="border-radius: 100%;">
                         <img class="/design/img-fluid w-100" src="/design/img/team-1.jpg" alt="" >
                         <div
@@ -182,8 +185,8 @@
                     </div>
                     <h4>Donald John</h4>
                     <i>Art Teacher</i>
-                </div>
-            </div>
+                </div> --}}
+            {{-- </div> --}}
         </div>
     </div>
     <!-- Team End -->

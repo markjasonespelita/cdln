@@ -64,6 +64,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admissions', function () {
+    return view('site.admissions');
+});
+
+Route::get('/admissions', function () {
+    return view('site.admissions');
+});
+
+Route::get('/academics', function () {
+    return view('site.academics');
+});
+
+Route::get('/student-affairs', function () {
+    return view('site.student-affairs');
+});
+
+Route::get('/library', function () {
+    return view('site.library');
+});
+
 Route::get('/about-us', function () {
     return view('site.about');
 });
