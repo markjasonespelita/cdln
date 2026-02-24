@@ -19,19 +19,21 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
             'role' => 'admin',
-            
+            'isApproved' => '1',
         ]);
 
         User::factory()->create([
             'name' => 'Mark Jason Espelita',
             'email' => 'markjasonespelita@gmail.com',
             'role' => 'admin',
+            'isApproved' => '1',
         ]);
 
         User::factory()->create([
             'name' => 'John Doe',
             'email' => 'johndoe@example.com',
             'role' => 'admin',
+            'isApproved' => '1',
         ]);
     }
 }
