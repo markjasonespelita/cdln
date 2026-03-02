@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            
+
             {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> --}}
             <div class="container py-4">
 
@@ -84,7 +84,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/assets/placeholder.jpg') }}" class="profile-img mb-3">
+                    <img src="{{ url('/assets/teachers/jeffrey.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Jeffrey Danes Dianito</h5>
                     <p class="text-primary small mb-3">BSCS Department</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
