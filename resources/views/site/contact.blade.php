@@ -84,6 +84,44 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
+                    <img src="{{ url('/assets/teachers/gregorio.jpg') }}" class="profile-img mb-3">
+                    <h5 class="fw-bold mb-1">Gregorio M. Orsolino</h5>
+                    <p class="text-primary small mb-3">CDLN Founder</p>
+                    <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
+                        <a href="mailto:gregmorsolino@gmail.com">gregmorsolino@gmail.com</a>
+                    </p>
+                    <p class="mb-1"><i class="fas fa-phone text-success me-2"></i>
+                        <a href="tel:09055861887">090 558 61887</a>
+                    </p>
+                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>Jan 24, 1964/p>
+                </div>
+            </div>
+        </div>
+
+        <!-- BSCS -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card contact-card text-center h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <img src="{{ url('/assets/teachers/inday.jpg') }}" class="profile-img mb-3">
+                    <h5 class="fw-bold mb-1">Inday M. Orsolino</h5>
+                    <p class="text-primary small mb-3">CDLN Founder</p>
+                    <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
+                        <a href="mailto:colegiodelasnavas@gmail.com">colegiodelasnavas@gmail.com</a>
+                    </p>
+                    <p class="mb-1"><i class="fas fa-phone text-success me-2"></i>
+                        <a href="tel:09957611309">09957 611 309</a>
+                    </p>
+                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>Jan 24, 1964/p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== COLLEGE DEPARTMENTS ===================== -->
+
+        <!-- BSCS -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card contact-card text-center h-100 shadow-sm border-0">
+                <div class="card-body">
                     <img src="{{ url('/assets/teachers/jeffrey.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Jeffrey Danes Dianito</h5>
                     <p class="text-primary small mb-3">BSCS Department</p>

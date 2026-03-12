@@ -191,4 +191,113 @@
     </div>
     <!-- Team End -->
 
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Our Facilities</span></p>
+                <h1 class="mb-4">Meet Our Facilities</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/cba.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>OFFICE OF THE COLLEGE BUSINESS ADMINISTRATION</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/clinic.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>SCHOOL CLINIC</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/computer-science-dept.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>COMPUTER SCIENCE DEPARTMENT</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/counselling.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>COUNSELING ROOM</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/educ.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>COLLEGE OF EDUCATION</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/finance.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>FINANCE AND ACCOUNTING OFFICE</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/genderanddevelopmentoffice.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>GENDER AND DEVELOPMENT OFFICE/OFFICE OF THE DEAN</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/institutional-development-office.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>INSTITUTIONAL DEVELOPMENT AND SERVICES OFFICE</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/library.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>SCHOOL LIBRARY</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/office-of-the-college-admin.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>OFFICE OF THE COLLEGE ADMINISTRATOR</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/office-of-the-criminal-justice.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>OFFICE OF THE CRIMINAL JUSTICE</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/office-of-the-dean.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>OFFICE OF THE DEAN</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/researh-and-extension-unit.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>RESEARCH AND EXTENSION UNIT</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/student-center.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>STUDENT CENTER/SSC OFFICE</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
