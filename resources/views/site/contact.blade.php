@@ -24,7 +24,7 @@
             </div>
 
             <div class="row mb-4">
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                         <div class="card-body">
                             <i class="fas fa-map-marker"></i>
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                {{-- <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="card">
                         <div class="card-body">
                             <i class="fas fa-phone"></i>
@@ -43,8 +43,8 @@
                             <small>Municipal Hall Direct Line</small>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                </div> --}}
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                         <div class="card-body">
                             <i class="fas fa-envelope"></i>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                         <div class="card-body">
                             <i class="fas fa-clock"></i>
@@ -140,7 +140,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/assets/placeholder.jpg') }}" class="profile-img mb-3">
+                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marijustine Tan</h5>
                     <p class="text-primary small mb-3">BSBA Department</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
@@ -196,7 +196,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/assets/placeholder.jpg') }}" class="profile-img mb-3">
+                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Lailanie Robelles</h5>
                     <p class="text-primary small mb-3">Grade 12 (Advisory)</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
@@ -212,10 +212,10 @@
 
         <!-- Grade 11 -->
         <div class="col-lg-4 col-md-6">
-            <div class="card contact-card text-center h-100 shadow-sm border-0">
+            <div class="card contact-card text-center h-100 shadow-sm bordstyler-0">
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/irin.jpg') }}" class="profile-img mb-3">
-                    <h5 class="fw-bold mb-1">Irin Maricor</h5>
+                    <h5 class="fw-bold mb-1">Rica Irinco</h5>
                     <p class="text-primary small mb-3">Grade 11</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
                         <a href="mailto:irincoricam@gmail.com">irincoricam@gmail.com</a>
@@ -250,7 +250,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/assets/placeholder.jpg') }}" class="profile-img mb-3">
+                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Celvastre Cabe</h5>
                     <p class="text-primary small mb-3">Grade 9 (Advisory)</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
@@ -286,7 +286,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/assets/placeholder.jpg') }}" class="profile-img mb-3">
+                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marianne Dianito</h5>
                     <p class="text-primary small mb-3">Grade 7 (Advisory)</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
