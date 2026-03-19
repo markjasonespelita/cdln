@@ -197,19 +197,13 @@
                 <p class="section-title px-5"><span class="px-2">Our Facilities</span></p>
                 <h1 class="mb-4">Meet Our Facilities</h1>
             </div>
+            <h4>Colleges</h4>
             <div class="row">
                 <div class="col-md-4 col-lg-4 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="">
                         <img class="" src="{{ url('assets/facilities/cba.jpg') }}" alt="" width="100%">
                     </div>
                     <h4>OFFICE OF THE COLLEGE BUSINESS ADMINISTRATION</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/clinic.jpg') }}" alt="" width="100%">
-                    </div>
-                    <h4>SCHOOL CLINIC</h4>
                     {{-- <i>Music Teacher</i> --}}
                 </div>
                 <div class="col-md-4 col-lg-4 text-center team mb-5">
@@ -221,16 +215,33 @@
                 </div>
                 <div class="col-md-4 col-lg-4 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/counselling.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ url('assets/facilities/educ.jpg') }}" alt="" width="100%">
                     </div>
-                    <h4>COUNSELING ROOM</h4>
+                    <h4>COLLEGE OF EDUCATION</h4>
                     {{-- <i>Music Teacher</i> --}}
                 </div>
                 <div class="col-md-4 col-lg-4 text-center team mb-5">
                     <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/educ.jpg') }}" alt="" width="100%">
+                        <img class="" src="{{ url('assets/facilities/office-of-the-criminal-justice.jpg') }}" alt="" width="100%">
                     </div>
-                    <h4>COLLEGE OF EDUCATION</h4>
+                    <h4>OFFICE OF THE CRIMINAL JUSTICE</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+            </div>
+            <h4>Other Offices</h4>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/clinic.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>SCHOOL CLINIC</h4>
+                    {{-- <i>Music Teacher</i> --}}
+                </div>
+                <div class="col-md-4 col-lg-4 text-center team mb-5">
+                    <div class="position-relative overflow-hidden mb-4" style="">
+                        <img class="" src="{{ url('assets/facilities/counselling.jpg') }}" alt="" width="100%">
+                    </div>
+                    <h4>COUNSELING ROOM</h4>
                     {{-- <i>Music Teacher</i> --}}
                 </div>
                 <div class="col-md-4 col-lg-4 text-center team mb-5">
@@ -266,13 +277,6 @@
                         <img class="" src="{{ url('assets/facilities/office-of-the-college-admin.jpg') }}" alt="" width="100%">
                     </div>
                     <h4>OFFICE OF THE COLLEGE ADMINISTRATOR</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/office-of-the-criminal-justice.jpg') }}" alt="" width="100%">
-                    </div>
-                    <h4>OFFICE OF THE CRIMINAL JUSTICE</h4>
                     {{-- <i>Music Teacher</i> --}}
                 </div>
                 <div class="col-md-4 col-lg-4 text-center team mb-5">
