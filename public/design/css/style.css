@@ -38,40 +38,40 @@
 
 :root {
   /* Core Brand Colors */
-  --primary: #7ED957;      /* Fresh Yellow-Green */
-  --secondary: #4CAF50;    /* Balanced Green */
-  --accent: #C6E700;       /* Bright Yellow-Green Accent */
-  --dark: #1B1B1B;         /* Soft Black */
-  --light: #f9fff3;        /* Very Light Greenish Background */
-
-  /* Supporting Colors */
-  --info: #6EC6CA;         /* Soft Teal */
-  --success: #66BB6A;      /* Natural Green */
-  --warning: #FFD600;      /* Bright Yellow */
-  --danger: #D32F2F;       /* Clean Red for contrast */
-
+  --primary: #009801;      /* Vibrant Green */
+  --secondary: #680718;    /* Deep Wine Red */
+  --accent: #E97102;       /* Rich Orange Accent */
+  --dark: #0E0E0A;         /* Near Black for Text and Background */
+  --light: #f5f5f5;        /* Soft Light Gray for contrast */
+  
+  /* Supporting Colors (Complementary) */
+  --info: #008b8b;         /* Deep Teal (balances the orange) */
+  --success: #00b14f;      /* Fresh Green */
+  --warning: #ffb700;      /* Warm Yellow for alerts */
+  --danger: #c21807;       /* Slightly brighter red for contrast */
+  
   /* Neutral Grays */
-  --gray: #7a7a7a;
-  --gray-dark: #2f2f2f;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
   --white: #ffffff;
 
   /* Bootstrap-like structure */
-  --blue: #7ED957;
-  --indigo: #4CAF50;
-  --purple: #8E44AD;
-  --pink: #C6E700;
-  --red: #D32F2F;
-  --orange: #FFD600;
-  --yellow: #FFEB3B;
-  --green: #7ED957;
-  --teal: #6EC6CA;
-  --cyan: #7ED957;
+  --blue: #009801;
+  --indigo: #680718;
+  --purple: #993366;
+  --pink: #e97102;
+  --red: #c21807;
+  --orange: #e97102;
+  --yellow: #ffb700;
+  --green: #009801;
+  --teal: #008b8b;
+  --cyan: #009801;
 
   /* Typography */
   --font-family-sans-serif: "Poppins", "Nunito", sans-serif;
   --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 
-  /* Breakpoints */
+  /* Breakpoints (unchanged) */
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;

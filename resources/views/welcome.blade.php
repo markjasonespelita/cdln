@@ -13,8 +13,7 @@
                 <a href="" class="px-5 py-3 mt-1 btn btn-secondary">Learn More</a>
             </div>
             <div class="text-center col-lg-6 text-lg-right">
-                {{-- <img class="mt-5 img-fluid" src="/design/img/custom/showcase.png" alt=""> --}}
-                <img class="mt-5 img-fluid" src="{{ url('assets/facilities/cdln-front.jpg') }}" alt="">
+                <img class="mt-5 img-fluid" src="/design/img/custom/showcase.png" alt="">
             </div>
         </div>
     </div>
@@ -25,7 +24,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="mb-5 rounded img-fluid mb-lg-0" src="{{ url('/assets/teachers/school1.jpg') }}" alt="">
+                    <img class="mb-5 rounded img-fluid mb-lg-0" src="/design/img/about-1.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
                     <p class="pr-5 section-title"><span class="pr-2">Learn About Us</span></p>
@@ -33,7 +32,7 @@
                     <p>Colegio De Las Navas is committed to the total development of man who shares in shaping human existence of becoming the best of what they are, deeply driven by strong determination for change through continuous learning.</p>
                     <div class="pt-2 pb-4 row">
                         <div class="col-6 col-md-4">
-                            <img class="rounded img-fluid" src="/assets/teachers/school2.jpg" alt="">
+                            <img class="rounded img-fluid" src="/design/img/about-2.jpg" alt="">
                         </div>
                         <div class="col-6 col-md-8">
                             <h3 class="mb-4">Core Values</h3>
@@ -396,7 +395,7 @@
                     @forelse (App\Models\Announcements::where('status', 'published')->where('departments_id', $department->id)->get() as $announcement)
                         <div class="px-3 testimonial-item">
                             <div class="p-4 mb-4 rounded shadow-sm bg-light">
-
+                                
                                 <b>Posted: {{ $announcement->created_at->diffForHumans() }}</b> <br>
                                 @php
                                     $filename = $announcement->attachment_path; // Adjust to your model attribute

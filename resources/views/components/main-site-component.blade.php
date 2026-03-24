@@ -12,10 +12,6 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav font-weight-bold mx-auto py-0">
                 <a href="{{ url('/') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
-                <a href="{{ url('/admissions') }}" class="nav-item nav-link {{ Request::is('admissions') ? 'active' : '' }}">Admissions</a>
-                <a href="{{ url('/academics') }}" class="nav-item nav-link {{ Request::is('academics') ? 'active' : '' }}">Academics</a>
-                <a href="{{ url('/student-affairs') }}" class="nav-item nav-link {{ Request::is('student-affairs') ? 'active' : '' }}">Student Affairs</a>
-                <a href="{{ url('/library') }}" class="nav-item nav-link {{ Request::is('library') ? 'active' : '' }}">Library</a>
                 <a href="{{ url('/about-us') }}" class="nav-item nav-link {{ Request::is('about-us') ? 'active' : '' }}">About</a>
                 {{-- <a href="class.html" class="nav-item nav-link">Classes</a>
                 <a href="team.html" class="nav-item nav-link">Teachers</a>
@@ -33,7 +29,7 @@
             @auth
                 <div class="d-flex align-items-center">
                     <span class="mr-3 font-weight-bold text-primary">
-                        {{ Auth::user()->name }}
+                        Welcome, {{ Auth::user()->name }}
                     </span>
                     <a href="{{ route('logout') }}"
                        class="btn btn-info px-3"
