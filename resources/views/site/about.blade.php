@@ -193,114 +193,205 @@
 
     <div class="container-fluid pt-5">
         <div class="container">
-            <div class="text-center pb-2">
+
+            <div class="text-center pb-4">
                 <p class="section-title px-5"><span class="px-2">Our Facilities</span></p>
                 <h1 class="mb-4">Meet Our Facilities</h1>
             </div>
-            <h4>Colleges</h4>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/cba.jpg') }}" alt="" width="100%">
+
+            <!-- BUILDING 1 -->
+            <div class="mb-5">
+                <h3 class="mb-4">College of Business Administration</h3>
+                <div class="row">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/bsba_department /received_2133138864205948.jpeg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Office Of Business Administration (Front)</p>
                     </div>
-                    <h4>OFFICE OF THE COLLEGE BUSINESS ADMINISTRATION</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/computer-science-dept.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/bsba_department /office of business administration_.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Office Of Business Administration (Outside)</p>
                     </div>
-                    <h4>COMPUTER SCIENCE DEPARTMENT</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/educ.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/bsba_department /office of business administration_(1).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Office Of Business Administration (Inside)</p>
                     </div>
-                    <h4>COLLEGE OF EDUCATION</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/office-of-the-criminal-justice.jpg') }}" alt="" width="100%">
-                    </div>
-                    <h4>OFFICE OF THE CRIMINAL JUSTICE</h4>
-                    {{-- <i>Music Teacher</i> --}}
+
                 </div>
             </div>
-            <h4>Other Offices</h4>
-            <div class="row">
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/clinic.jpg') }}" alt="" width="100%">
+
+            <!-- BUILDING 2 -->
+            <div class="mb-5">
+                <h3 class="mb-4">Criminology Department</h3>
+                <div class="row">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Forensic chemistry lab.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Forensic Chemistry Lab</p>
                     </div>
-                    <h4>SCHOOL CLINIC</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/counselling.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Forensic chemistry lab(1).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Forensic Chemistry Lab 2</p>
                     </div>
-                    <h4>COUNSELING ROOM</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/finance.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Forensic chemistry lab(2).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Forensic Chemistry Lab 3</p>
                     </div>
-                    <h4>FINANCE AND ACCOUNTING OFFICE</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/genderanddevelopmentoffice.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Forensic chemistry lab(3).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Forensic Chemistry Lab 4</p>
                     </div>
-                    <h4>GENDER AND DEVELOPMENT OFFICE/OFFICE OF THE DEAN</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/institutional-development-office.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Forensic chemistry lab(3).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Forensic Chemistry Lab 4</p>
                     </div>
-                    <h4>INSTITUTIONAL DEVELOPMENT AND SERVICES OFFICE</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/library.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Laboratory_.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Laboratory</p>
                     </div>
-                    <h4>SCHOOL LIBRARY</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/office-of-the-college-admin.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /Laboratory_(1).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Laboratory 2</p>
                     </div>
-                    <h4>OFFICE OF THE COLLEGE ADMINISTRATOR</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/office-of-the-dean.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /moot court_.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Moot Court</p>
                     </div>
-                    <h4>OFFICE OF THE DEAN</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/researh-and-extension-unit.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /moot court_(1).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Moot Court 2</p>
                     </div>
-                    <h4>RESEARCH AND EXTENSION UNIT</h4>
-                    {{-- <i>Music Teacher</i> --}}
-                </div>
-                <div class="col-md-4 col-lg-4 text-center team mb-5">
-                    <div class="position-relative overflow-hidden mb-4" style="">
-                        <img class="" src="{{ url('assets/facilities/student-center.jpg') }}" alt="" width="100%">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /permanent crime scene_.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Permanent Crime Scene</p>
                     </div>
-                    <h4>STUDENT CENTER/SSC OFFICE</h4>
-                    {{-- <i>Music Teacher</i> --}}
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/criminology_department /received_2052085372389848.jpeg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Permanent Crime Scene 2</p>
+                    </div>
+
                 </div>
             </div>
+
+            <!-- BUILDING 3 -->
+            <div class="mb-5">
+                <h3 class="mb-4">Institutional Development And Services Office</h3>
+                <div class="row">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/institutional_development_and_services_office/received_2044491536111541.jpeg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Counseling Area</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/institutional_development_and_services_office/received_3942891742674749.jpeg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Office Of The Student Affairs and Services</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/institutional_development_and_services_office/student publication office_.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Student Publication Office (Inside)</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/institutional_development_and_services_office/student publication office.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Student Publication Office (Outside)</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BUILDING 4 -->
+            <div class="mb-5">
+                <h3 class="mb-4">Office Of The Registrar</h3>
+                <div class="row">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/office_of_the_registrar/finance and accounting office_.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Finance And Accounting Office</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/office_of_the_registrar/finance and accounting office_(1).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Finance And Accounting Office 2</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/office_of_the_registrar/finance and accounting office_(2).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Finance And Accounting Office 3</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/office_of_the_registrar/office of registrar.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Office Of The Registrar</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/office_of_the_registrar/office of registrar(1).jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Office Of The Registrar 2</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BUILDING 5 -->
+            <div class="mb-5">
+                <h3 class="mb-4">Junior High School</h3>
+                <div class="row">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/highschool_&_senior_highschool_department /grade 7.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Grade 7</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/highschool_&_senior_highschool_department /grade 8.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Grade 8</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/highschool_&_senior_highschool_department /grade 9.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Grade 9</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/highschool_&_senior_highschool_department /grade 10.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Grade 10</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BUILDING 6 -->
+            <div class="mb-5">
+                <h3 class="mb-4">Senior High School</h3>
+                <div class="row">
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/highschool_&_senior_highschool_department /grade 11.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Grade 11</p>
+                    </div>
+
+                    <div class="col-md-4 text-center mb-4">
+                        <img src="{{ url('assets/facilities/highschool_&_senior_highschool_department /grade 12.jpg') }}" class="img-fluid rounded shadow-sm">
+                        <p class="mt-2 font-weight-bold">Grade 12</p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
 

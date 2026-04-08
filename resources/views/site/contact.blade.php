@@ -81,7 +81,7 @@
         <!-- ===================== COLLEGE DEPARTMENTS ===================== -->
 
         <!-- BSCS -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/gregorio.jpg') }}" class="profile-img mb-3">
@@ -99,7 +99,7 @@
         </div>
 
         <!-- BSCS -->
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-6 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/inday.jpg') }}" class="profile-img mb-3">
