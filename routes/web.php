@@ -97,9 +97,9 @@ Route::get('/announcement-details/{announcementId}', [AnnouncementsController::c
 Route::get('/event-details/{eventId}', [EventsController::class, 'details']);
 
 Route::middleware([
+    'verified',
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified',
     CheckApprovalMiddleware::class
 ])->group(function () {
 
