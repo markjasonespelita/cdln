@@ -2,19 +2,22 @@
 
 namespace App\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use OwenIt\Auditing\Contracts\Auditable;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Users extends Model implements Auditable
+class User extends Authenticatable implements MustVerifyEmail, Auditable
 {
-    /** @use HasFactory<\Database\Factories\UsersFactory> */
+    use HasFactory, \OwenIt\Auditing\Auditable;
 
-    protected $fillable = ["name","email","password","role","isTrash"]; 
-
-
-    use \OwenIt\Auditing\Auditable;
+    protected $fillable = [
+        "name",
+        "email",
+        "password",
+        "role",
+        "isTrash"
+    ];
 
     protected $auditExclude = ['id'];
 
@@ -24,6 +27,4 @@ class Users extends Model implements Auditable
             'id:' . $this->id,
         ];
     }
-                                            
-    use HasFactory;
 }
