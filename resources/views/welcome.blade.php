@@ -14,7 +14,7 @@
             </div>
             <div class="text-center col-lg-6 text-lg-right">
                 {{-- <img class="mt-5 img-fluid" src="/design/img/custom/showcase.png" alt=""> --}}
-                <img class="mt-5 img-fluid" src="{{ url('assets/facilities/cdln-front.jpg') }}" alt="">
+                <img class="mt-5 img-fluid" src="{{ url('assets/facilities/685044211_1296680095181305_2764147245215186680_n.jpg') }}" alt="">
             </div>
         </div>
     </div>
