@@ -97,14 +97,14 @@ Route::get('/announcement-details/{announcementId}', [AnnouncementsController::c
 Route::get('/event-details/{eventId}', [EventsController::class, 'details']);
 
 Route::middleware([
-    'verified',
+    // 'verified',
     'auth:sanctum',
     config('jetstream.auth_session'),
     CheckApprovalMiddleware::class
 ])->group(function () {
 
     // custom
-    
+
     Route::get('/approve-user/{userId}', [UserApprovalController::class, 'approveUser']);
     Route::get('/disapprove-user/{userId}', [UserApprovalController::class, 'disapproveUser']);
 
