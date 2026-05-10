@@ -6,7 +6,7 @@
             <span class="text-primary">KidKinder</span> -->
             <img src="/design/img/logo/logo.jpg" alt="" height="100px" width="100px">
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
