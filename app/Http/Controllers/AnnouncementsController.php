@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\{Announcementotherfiles, Logs, Announcements};
+use App\Models\{Announcementcomments, Announcementotherfiles, Announcementreactions, Logs, Announcements};
 use App\Http\Requests\StoreAnnouncementsRequest;
 use App\Http\Requests\UpdateAnnouncementsRequest;
 use Illuminate\Http\Request;
@@ -166,7 +166,11 @@ class AnnouncementsController extends Controller {
     public function destroy(Announcements $announcements, $announcementsId)
     {
 
-        Announcements::where('id', $announcementsId)->update(['isTrash' => '1']);
+        Announcementreactions::where('announcements_id', $announcementsId)->delete();
+
+        Announcementcomments::where('announcements_id', $announcementsId)->delete();
+
+        Announcements::where('id', $announcementsId)->delete();
 
         return redirect('/announcements');
     }
