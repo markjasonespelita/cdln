@@ -5,17 +5,63 @@
     <!-- Header Start -->
     <div class="px-0 mb-5 container-fluid bg-primary px-md-5">
         <div class="px-3 row align-items-center">
+
             <div class="text-center col-lg-6 text-lg-left">
-                <h4 class="mt-5 mb-4 text-white mt-lg-0">Welcome to...</h4>
-                <h1 class="text-white display-3 font-weight-bold">Colegio De Las Navas</h1>
-                <p class="mb-4 text-white">Where learning meets excellence — we nurture minds, shape character, and inspire a lifelong passion for knowledge.
-      Join our vibrant community and be part of a legacy that values growth, discipline, and heart.</p>
-                <a href="{{ url('/learn-more') }}" class="px-5 py-3 mt-1 btn btn-secondary">Learn More</a>
+
+                <h4
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                    class="mt-5 mb-4 text-white mt-lg-0"
+                >
+                    Welcome to...
+                </h4>
+
+                <h1
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                    data-aos-duration="1200"
+                    class="text-white display-3 font-weight-bold"
+                >
+                    Colegio De Las Navas
+                </h1>
+
+                <p
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                    data-aos-duration="1200"
+                    class="mb-4 text-white"
+                >
+                    Where learning meets excellence — we nurture minds, shape character, and inspire a lifelong passion for knowledge. Join our vibrant community and be part of a legacy that values growth, discipline, and heart.
+                </p>
+
+                <a
+                    href="{{ url('/learn-more') }}"
+                    data-aos="zoom-in"
+                    data-aos-delay="1000"
+                    data-aos-duration="1000"
+                    class="px-5 py-3 mt-1 btn btn-secondary"
+                >
+                    Learn More
+                </a>
+
             </div>
+
             <div class="text-center col-lg-6 text-lg-right">
+
                 {{-- <img class="mt-5 img-fluid" src="/design/img/custom/showcase.png" alt=""> --}}
-                <img class="mt-5 img-fluid" src="{{ url('assets/facilities/685044211_1296680095181305_2764147245215186680_n.jpg') }}" alt="">
+
+                <img
+                    data-aos="flip-left"
+                    data-aos-delay="1300"
+                    data-aos-duration="1400"
+                    class="mt-5 img-fluid"
+                    src="{{ url('assets/facilities/685044211_1296680095181305_2764147245215186680_n.jpg') }}"
+                    alt=""
+                >
+
             </div>
+
         </div>
     </div>
     <!-- Header End -->
@@ -24,28 +70,130 @@
     <div class="py-5 container-fluid">
         <div class="container">
             <div class="row align-items-center">
+
+                <!-- Left Image -->
                 <div class="col-lg-5">
-                    <img class="mb-5 rounded img-fluid mb-lg-0" src="{{ url('/assets/teachers/school1.jpg') }}" alt="">
+                    <img
+                        data-aos="zoom-in-right"
+                        data-aos-delay="100"
+                        data-aos-duration="1400"
+                        class="mb-5 rounded img-fluid mb-lg-0"
+                        src="{{ url('/assets/teachers/school1.jpg') }}"
+                        alt=""
+                    >
                 </div>
+
+                <!-- Right Content -->
                 <div class="col-lg-7">
-                    <p class="pr-5 section-title"><span class="pr-2">Learn About Us</span></p>
-                    <h1 class="mb-4">Our Principles/Philosophy</h1>
-                    <p>Colegio De Las Navas is committed to the total development of man who shares in shaping human existence of becoming the best of what they are, deeply driven by strong determination for change through continuous learning.</p>
+
+                    <p
+                        data-aos="fade-down"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        class="pr-5 section-title"
+                    >
+                        <span class="pr-2">Learn About Us</span>
+                    </p>
+
+                    <h1
+                        data-aos="fade-left"
+                        data-aos-delay="500"
+                        data-aos-duration="1200"
+                        class="mb-4"
+                    >
+                        Our Principles/Philosophy
+                    </h1>
+
+                    <p
+                        data-aos="fade-up"
+                        data-aos-delay="700"
+                        data-aos-duration="1200"
+                    >
+                        Colegio De Las Navas is committed to the total development of man who shares in shaping human existence of becoming the best of what they are, deeply driven by strong determination for change through continuous learning.
+                    </p>
+
                     <div class="pt-2 pb-4 row">
+
+                        <!-- Small Image -->
                         <div class="col-6 col-md-4">
-                            <img class="rounded img-fluid" src="/assets/teachers/school2.jpg" alt="">
+                            <img
+                                data-aos="flip-up"
+                                data-aos-delay="900"
+                                data-aos-duration="1200"
+                                class="rounded img-fluid"
+                                src="/assets/teachers/school2.jpg"
+                                alt=""
+                            >
                         </div>
+
+                        <!-- Core Values -->
                         <div class="col-6 col-md-8">
-                            <h3 class="mb-4">Core Values</h3>
+
+                            <h3
+                                data-aos="fade-right"
+                                data-aos-delay="1100"
+                                data-aos-duration="1000"
+                                class="mb-4"
+                            >
+                                Core Values
+                            </h3>
+
                             <ul class="m-0 list-inline">
-                                <li class="py-2 border-top border-bottom"><i class="mr-3 fa fa-check text-primary"></i>Competence</li>
-                                <li class="py-2 border-bottom"><i class="mr-3 fa fa-check text-primary"></i>Diversity</li>
-                                <li class="py-2 border-bottom"><i class="mr-3 fa fa-check text-primary"></i>Life-Long Learning</li>
-                                <li class="py-2 border-bottom"><i class="mr-3 fa fa-check text-primary"></i>Nobility.</li>
+
+                                <li
+                                    data-aos="fade-left"
+                                    data-aos-delay="1200"
+                                    data-aos-duration="800"
+                                    class="py-2 border-top border-bottom"
+                                >
+                                    <i class="mr-3 fa fa-check text-primary"></i>
+                                    Competence
+                                </li>
+
+                                <li
+                                    data-aos="fade-left"
+                                    data-aos-delay="1350"
+                                    data-aos-duration="800"
+                                    class="py-2 border-bottom"
+                                >
+                                    <i class="mr-3 fa fa-check text-primary"></i>
+                                    Diversity
+                                </li>
+
+                                <li
+                                    data-aos="fade-left"
+                                    data-aos-delay="1500"
+                                    data-aos-duration="800"
+                                    class="py-2 border-bottom"
+                                >
+                                    <i class="mr-3 fa fa-check text-primary"></i>
+                                    Life-Long Learning
+                                </li>
+
+                                <li
+                                    data-aos="fade-left"
+                                    data-aos-delay="1650"
+                                    data-aos-duration="800"
+                                    class="py-2 border-bottom"
+                                >
+                                    <i class="mr-3 fa fa-check text-primary"></i>
+                                    Nobility
+                                </li>
+
                             </ul>
                         </div>
                     </div>
-                    <a href="{{ url('learn-more') }}" class="px-4 py-2 mt-2 btn btn-primary">Learn More</a>
+
+                    <a
+                        href="{{ url('learn-more') }}"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="1850"
+                        data-aos-duration="1000"
+                        class="px-4 py-2 mt-2 btn btn-primary"
+                    >
+                        Learn More
+                    </a>
+
                 </div>
             </div>
         </div>
@@ -56,77 +204,123 @@
     <!-- Facilities Start -->
     <div class="pt-5 container-fluid">
         <div class="container pb-3">
+
             <div class="row">
+
+                <!-- Mission -->
                 <div class="pb-1 col-lg-6 col-md-6">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-047-target h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
+
+                    <div
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                        data-aos-duration="1200"
+                        class="mb-4 rounded shadow-sm d-flex bg-light border-top"
+                        style="padding: 30px;"
+                    >
+
+                        <i
+                            data-aos="zoom-in"
+                            data-aos-delay="300"
+                            data-aos-duration="1000"
+                            class="mb-3 flaticon-047-target h1 font-weight-normal text-primary"
+                        ></i>
+
+                        <div
+                            class="pl-4"
+                            data-aos="fade-up"
+                            data-aos-delay="500"
+                            data-aos-duration="1200"
+                        >
                             <h4>Mission</h4>
-                            <p class="m-0">CDLN instills a student-centered environment for transformational learning experience, producing graduates equipped with appropriate knowledge, skills, and attitudes, responsive to the needs of a dynamically changing global society.</p>
+
+                            <p class="m-0">
+                                CDLN instills a student-centered environment for transformational learning experience, producing graduates equipped with appropriate knowledge, skills, and attitudes, responsive to the needs of a dynamically changing global society.
+                            </p>
                         </div>
+
                     </div>
                 </div>
+
+                <!-- Vision -->
                 <div class="pb-1 col-lg-6 col-md-6">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-014-vision h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
+
+                    <div
+                        data-aos="fade-left"
+                        data-aos-delay="250"
+                        data-aos-duration="1200"
+                        class="mb-4 rounded shadow-sm d-flex bg-light border-top"
+                        style="padding: 30px;"
+                    >
+
+                        <i
+                            data-aos="zoom-in"
+                            data-aos-delay="450"
+                            data-aos-duration="1000"
+                            class="mb-3 flaticon-014-vision h1 font-weight-normal text-primary"
+                        ></i>
+
+                        <div
+                            class="pl-4"
+                            data-aos="fade-up"
+                            data-aos-delay="650"
+                            data-aos-duration="1200"
+                        >
                             <h4>Vision</h4>
-                            <p class="m-0">By 2030, CDLN is a nationally-recognized premier community college in the Visayas Region for instruction, research, and community extension services.</p>
+
+                            <p class="m-0">
+                                By 2030, CDLN is a nationally-recognized premier community college in the Visayas Region for instruction, research, and community extension services.
+                            </p>
                         </div>
+
                     </div>
                 </div>
+
+                <!-- History -->
                 <div class="pb-1 col-lg-12 col-md-12">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-014-vision h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
+
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="500"
+                        data-aos-duration="1400"
+                        class="mb-4 rounded shadow-sm d-flex bg-light border-top"
+                        style="padding: 30px;"
+                    >
+
+                        <i
+                            data-aos="flip-left"
+                            data-aos-delay="700"
+                            data-aos-duration="1200"
+                            class="mb-3 flaticon-014-vision h1 font-weight-normal text-primary"
+                        ></i>
+
+                        <div
+                            class="pl-4"
+                            data-aos="fade-in"
+                            data-aos-delay="900"
+                            data-aos-duration="1500"
+                        >
+
                             <h4>COLEGIO DE LAS NAVAS: A BRIEF HISTORY</h4>
-                            <p class="m-0">The Colegio De Las Navas was established through an enabling Municipal Ordinance No. 17 – 2005 enacted and adopted on January 10, 2005 by the Sangguniang Bayan and, on review and final reading, duly approved by the Sangguniang Panlalawigan of the Province of Northern Samar on April 15, 2005. The said Ordinance is titled as “An Ordinance Establishing the Community College in the Municipality of Las Navas, Province of Northern Samar to be known as Kolehiyo De Las Navas.” Also, Municipal Ordinance No. 18 – 2005 was enacted on the 28th day of March entitled “An Ordinance Enacting the Herein Charter of the Community College in the Municipality of Las Navas, Northern Samar known as “Colegio De Las Navas.” <br> <br>
 
-The name attached to Colegio, which is “De Las Navas” was a surname taken from a Spanish Military Colonel who was instrumental in the occupation by the Spanish Government during the 18th Century in the Municipality of Las Navas. <br> <br>
+                            <p class="m-0">
+                                The Colegio De Las Navas was established through an enabling Municipal Ordinance No. 17 – 2005 enacted and adopted on January 10, 2005 by the Sangguniang Bayan and, on review and final reading, duly approved by the Sangguniang Panlalawigan of the Province of Northern Samar on April 15, 2005. The said Ordinance is titled as “An Ordinance Establishing the Community College in the Municipality of Las Navas, Province of Northern Samar to be known as Kolehiyo De Las Navas.” Also, Municipal Ordinance No. 18 – 2005 was enacted on the 28th day of March entitled “An Ordinance Enacting the Herein Charter of the Community College in the Municipality of Las Navas, Northern Samar known as “Colegio De Las Navas.”
+                                <br><br>
 
-The Colegio De Las Navas, classified as an economic enterprise under Republic Act No. 7160, otherwise known as the Local Government Code of 1991, started its operation on June of School Year 2005-2006 offering degree programs such as Bachelor of Elementary Education, Bachelor of Secondary Education, Bachelor of Science in Criminology, Bachelor of Science in Computer Science, and Bachelor of Science in Business Administration. All these degree programs, which are approved by the Board of Trustees of Colegio De Las Navas, in its Board Resolution No. 01 – 2005, series of 2005, are recognized by the Commission on Higher Education. <br> <br>
+                                The name attached to Colegio, which is “De Las Navas” was a surname taken from a Spanish Military Colonel who was instrumental in the occupation by the Spanish Government during the 18th Century in the Municipality of Las Navas.
+                                <br><br>
 
-Colegio De Las Navas, in School Year 2008-2009, also offered secondary education, named as Laboratory High School, which serves as the pre-Teacher training ground for tertiary students taking up Teacher Education – i.e., Bachelor of Elementary Education and Bachelor of Secondary Education.  For School Year 2016-2017, it offers also Grade 11 of the Senior High School. All secondary education offerings – both Junior High School and Senior High School – are recognized by the Department of Education. <br> <br>
-</p>
+                                The Colegio De Las Navas, classified as an economic enterprise under Republic Act No. 7160, otherwise known as the Local Government Code of 1991, started its operation on June of School Year 2005-2006 offering degree programs such as Bachelor of Elementary Education, Bachelor of Secondary Education, Bachelor of Science in Criminology, Bachelor of Science in Computer Science, and Bachelor of Science in Business Administration. All these degree programs, which are approved by the Board of Trustees of Colegio De Las Navas, in its Board Resolution No. 01 – 2005, series of 2005, are recognized by the Commission on Higher Education.
+                                <br><br>
+
+                                Colegio De Las Navas, in School Year 2008-2009, also offered secondary education, named as Laboratory High School, which serves as the pre-Teacher training ground for tertiary students taking up Teacher Education – i.e., Bachelor of Elementary Education and Bachelor of Secondary Education. For School Year 2016-2017, it offers also Grade 11 of the Senior High School. All secondary education offerings – both Junior High School and Senior High School – are recognized by the Department of Education.
+                                <br><br>
+                            </p>
+
                         </div>
+
                     </div>
                 </div>
-                {{-- <div class="pb-1 col-lg-4 col-md-6">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-030-crayons h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
-                            <h4>Arts and Crafts</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-1 col-lg-4 col-md-6">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-017-toy-car h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
-                            <h4>Safe Transportation</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-1 col-lg-4 col-md-6">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-025-sandwich h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
-                            <h4>Healthy food</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pb-1 col-lg-4 col-md-6">
-                    <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
-                        <i class="mb-3 flaticon-047-backpack h1 font-weight-normal text-primary"></i>
-                        <div class="pl-4">
-                            <h4>Educational Tour</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div> --}}
+
             </div>
         </div>
     </div>

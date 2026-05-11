@@ -29,6 +29,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="/design/css/style.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Styles -->
     @livewireStyles
 </head>
@@ -47,6 +49,11 @@
 
     @livewireScripts
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
