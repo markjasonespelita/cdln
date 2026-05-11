@@ -10,7 +10,7 @@
                 <h1 class="text-white display-3 font-weight-bold">Colegio De Las Navas</h1>
                 <p class="mb-4 text-white">Where learning meets excellence — we nurture minds, shape character, and inspire a lifelong passion for knowledge.
       Join our vibrant community and be part of a legacy that values growth, discipline, and heart.</p>
-                <a href="" class="px-5 py-3 mt-1 btn btn-secondary">Learn More</a>
+                <a href="{{ url('/learn-more') }}" class="px-5 py-3 mt-1 btn btn-secondary">Learn More</a>
             </div>
             <div class="text-center col-lg-6 text-lg-right">
                 {{-- <img class="mt-5 img-fluid" src="/design/img/custom/showcase.png" alt=""> --}}
@@ -45,7 +45,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="" class="px-4 py-2 mt-2 btn btn-primary">Learn More</a>
+                    <a href="{{ url('learn-more') }}" class="px-4 py-2 mt-2 btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -523,63 +523,4 @@ Colegio De Las Navas, in School Year 2008-2009, also offered secondary education
         </div>
     </div>
     <!-- Testimonial End -->
-
-
-    <!-- Blog Start -->
-    <div class="pt-5 container-fluid">
-        <div class="container">
-            <div class="pb-2 text-center">
-                <p class="px-5 section-title"><span class="px-2">Latest Blog</span></p>
-                <h1 class="mb-4">Latest Articles From Blog</h1>
-            </div>
-            <div class="pb-3 row">
-                <div class="mb-4 col-lg-4">
-                    <div class="mb-2 border-0 shadow-sm card">
-                        <img class="mb-2 card-img-top" src="/design/img/blog-1.jpg" alt="">
-                        <div class="p-4 text-center card-body bg-light">
-                            <h4 class="">Diam amet eos at no eos</h4>
-                            <div class="mb-3 d-flex justify-content-center">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="px-4 mx-auto my-2 btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 col-lg-4">
-                    <div class="mb-2 border-0 shadow-sm card">
-                        <img class="mb-2 card-img-top" src="/design/img/blog-2.jpg" alt="">
-                        <div class="p-4 text-center card-body bg-light">
-                            <h4 class="">Diam amet eos at no eos</h4>
-                            <div class="mb-3 d-flex justify-content-center">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="px-4 mx-auto my-2 btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-4 col-lg-4">
-                    <div class="mb-2 border-0 shadow-sm card">
-                        <img class="mb-2 card-img-top" src="/design/img/blog-3.jpg" alt="">
-                        <div class="p-4 text-center card-body bg-light">
-                            <h4 class="">Diam amet eos at no eos</h4>
-                            <div class="mb-3 d-flex justify-content-center">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                            <p>Sed kasd sea sed at elitr sed ipsum justo, sit nonumy diam eirmod, duo et sed sit eirmod kasd clita tempor dolor stet lorem. Tempor ipsum justo amet stet...</p>
-                            <a href="" class="px-4 mx-auto my-2 btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
 @endsection

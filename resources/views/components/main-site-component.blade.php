@@ -12,6 +12,7 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav font-weight-bold mx-auto py-0">
                 <a href="{{ url('/') }}" class="nav-item nav-link {{ Request::is('/') ? 'active' : '' }}">Home</a>
+                <a href="{{ url('/learn-more') }}" class="nav-item nav-link {{ Request::is('learn-more') ? 'active' : '' }}">Learn More</a>
                 <a href="{{ url('/admissions') }}" class="nav-item nav-link {{ Request::is('admissions') ? 'active' : '' }}">Admissions</a>
                 <a href="{{ url('/academics') }}" class="nav-item nav-link {{ Request::is('academics') ? 'active' : '' }}">Academics</a>
                 <a href="{{ url('/student-affairs') }}" class="nav-item nav-link {{ Request::is('student-affairs') ? 'active' : '' }}">Student Affairs</a>

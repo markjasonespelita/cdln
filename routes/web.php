@@ -91,6 +91,11 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', function () {
     return view('site.contact');
 });
+
+
+Route::get('/learn-more', function () {
+    return view('site.learn-more');
+});
 // custom
 
 Route::get('/announcement-details/{announcementId}', [AnnouncementsController::class, 'details']);
