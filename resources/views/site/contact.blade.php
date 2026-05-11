@@ -196,7 +196,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
+                    <img src="{{ url('assets/no-pic/no_pic_lailanne.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Lailanie Robelles</h5>
                     <p class="text-primary small mb-3">Grade 12 (Advisory)</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
@@ -250,7 +250,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
+                    <img src="{{ url('assets/no-pic/no_pic_celvestre.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Celvastre Cabe</h5>
                     <p class="text-primary small mb-3">Grade 9 (Advisory)</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
@@ -286,7 +286,7 @@
         <div class="col-lg-4 col-md-6">
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
-                    <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
+                    <img src="{{ url('assets/no-pic/no_pic_Marianne.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marianne Dianito</h5>
                     <p class="text-primary small mb-3">Grade 7 (Advisory)</p>
                     <p class="mb-1"><i class="fas fa-envelope text-danger me-2"></i>
