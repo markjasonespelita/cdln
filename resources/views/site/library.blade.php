@@ -21,7 +21,12 @@
                 <div class="mb-4 rounded shadow-sm d-flex bg-light border-top" style="padding: 30px;">
                     <i class="mb-3 flaticon-047-target h1 font-weight-normal text-primary"></i>
                     <div class="pl-4">
-                        <img src="{{ url('assets/lib/library_1.jpg') }}" width="100%" alt="">
+                        <img
+                            src="{{ url('assets/lib/library_1.jpg') }}"
+                            width="100%"
+                            alt=""
+                            style="transform: rotate(180deg);"
+                        >
                     </div>
                 </div>
             </div>
