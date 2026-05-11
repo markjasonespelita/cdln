@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-5 mb-lg-0" src="/design/img/about-1.jpg" alt="">
+                    <img class="img-fluid rounded mb-5 mb-lg-0" src="{{ url('assets/facilities/685044211_1296680095181305_2764147245215186680_n.jpg') }}" alt="">
                 </div>
                 <div class="col-lg-7">
                     <p class="section-title pr-5"><span class="pr-2">Learn About Us</span></p>
@@ -28,7 +28,7 @@
                     <p>At Colegio De Las Navas, we believe that education goes beyond the classroom — it’s about shaping values, nurturing talents, and inspiring every learner to reach their fullest potential. With dedicated teachers, a supportive community, and a culture of excellence, we strive to create an environment where students grow in knowledge, confidence, and character. Here, every child is encouraged to dream big, learn with purpose, and lead with heart.</p>
                     <div class="row pt-2 pb-4">
                         <div class="col-6 col-md-4">
-                            <img class="img-fluid rounded" src="/design/img/about-2.jpg" alt="">
+                            <img class="img-fluid rounded" src="{{ url('assets/facilities/cdln-front.jpg') }}" alt="">
                         </div>
                         <div class="col-6 col-md-8">
                             <h3 class="mb-4">Core Values</h3>
