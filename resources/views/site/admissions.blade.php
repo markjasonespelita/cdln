@@ -134,13 +134,13 @@
                     <!-- Tab Nav -->
                     <ul class="nav nav-pills mb-3" id="reqTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="freshmen-tab" data-toggle="pill" href="#freshmen" role="tab">Incoming Freshmen</a>
+                            <a class="nav-link active" id="freshmen-tab" data-bs-toggle="pill" href="#freshmen" role="tab">Incoming Freshmen</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="transferee-tab" data-toggle="pill" href="#transferee" role="tab">Transferees</a>
+                            <a class="nav-link" id="transferee-tab" data-bs-toggle="pill" href="#transferee" role="tab">Transferees</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="returning-tab" data-toggle="pill" href="#returning" role="tab">Returning Students</a>
+                            <a class="nav-link" id="returning-tab" data-bs-toggle="pill" href="#returning" role="tab">Returning Students</a>
                         </li>
                     </ul>
 
@@ -231,16 +231,16 @@
 
                     <ul class="nav nav-pills mb-3" id="enrollTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="ef-tab" data-toggle="pill" href="#ef" role="tab">Freshmen</a>
+                            <a class="nav-link active" id="ef-tab" data-bs-toggle="pill" href="#ef" role="tab">Freshmen</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="ec-tab" data-toggle="pill" href="#ec" role="tab">Continuing / Returning</a>
+                            <a class="nav-link" id="ec-tab" data-bs-toggle="pill" href="#ec" role="tab">Continuing / Returning</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="et-tab" data-toggle="pill" href="#et" role="tab">Transferees</a>
+                            <a class="nav-link" id="et-tab" data-bs-toggle="pill" href="#et" role="tab">Transferees</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="es-tab" data-toggle="pill" href="#es" role="tab">Special Needs</a>
+                            <a class="nav-link" id="es-tab" data-bs-toggle="pill" href="#es" role="tab">Special Needs</a>
                         </li>
                     </ul>
 
@@ -451,7 +451,7 @@
 
                         <div class="card border-0 mb-2">
                             <div class="card-header bg-white" id="rh1">
-                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-toggle="collapse" data-target="#rc1">
+                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-bs-toggle="collapse" data-target="#rc1">
                                     <i class="fa fa-chalkboard-teacher mr-2"></i> Teacher Education Department
                                 </button>
                             </div>
@@ -470,7 +470,7 @@
 
                         <div class="card border-0 mb-2">
                             <div class="card-header bg-white" id="rh2">
-                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-toggle="collapse" data-target="#rc2">
+                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-bs-toggle="collapse" data-target="#rc2">
                                     <i class="fa fa-balance-scale mr-2"></i> Criminology Department
                                 </button>
                             </div>
@@ -489,7 +489,7 @@
 
                         <div class="card border-0 mb-2">
                             <div class="card-header bg-white" id="rh3">
-                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-toggle="collapse" data-target="#rc3">
+                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-bs-toggle="collapse" data-target="#rc3">
                                     <i class="fa fa-laptop-code mr-2"></i> BS Computer Science
                                 </button>
                             </div>
@@ -506,7 +506,7 @@
 
                         <div class="card border-0 mb-2">
                             <div class="card-header bg-white" id="rh4">
-                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-toggle="collapse" data-target="#rc4">
+                                <button class="btn btn-block text-left font-weight-bold text-primary collapsed" data-bs-toggle="collapse" data-target="#rc4">
                                     <i class="fa fa-briefcase mr-2"></i> Business Administration
                                 </button>
                             </div>
