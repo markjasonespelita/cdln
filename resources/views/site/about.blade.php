@@ -21,10 +21,7 @@
     <div class="container">
         <ul class="nav nav-pills justify-content-center flex-wrap" id="aboutTabs" role="tablist">
             <li class="nav-item m-1">
-                <a class="nav-link active" id="overview-tab" data-bs-toggle="pill" href="#overview" role="tab">Overview</a>
-            </li>
-            <li class="nav-item m-1">
-                <a class="nav-link" id="vmgp-tab" data-bs-toggle="pill" href="#vmgp" role="tab">Vision, Mission & Goals</a>
+                <a class="nav-link active" id="vmgp-tab" data-bs-toggle="pill" href="#vmgp" role="tab">Vision, Mission & Goals</a>
             </li>
             <li class="nav-item m-1">
                 <a class="nav-link" id="history-tab" data-bs-toggle="pill" href="#history" role="tab">History & Charter</a>
@@ -48,7 +45,7 @@
     <div class="container">
         <div class="tab-content" id="aboutTabsContent">
             <!-- ===================== VISION, MISSION & GOALS ===================== -->
-            <div class="tab-pane fade" id="vmgp" role="tabpanel">
+            <div class="tab-pane fade show active" id="vmgp" role="tabpanel">
                 <div class="text-center pb-4">
                     <p class="section-title px-5"><span class="px-2">Who We Are</span></p>
                     <h1 class="mb-4">Vision, Mission & Goals</h1>
