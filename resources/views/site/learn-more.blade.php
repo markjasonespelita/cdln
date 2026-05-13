@@ -393,23 +393,6 @@
                 </div>
             </div>
 
-            <!-- Card 7 -->
-            <div class="col-lg-4 col-md-4 mb-4">
-                <div
-                    data-aos="flip-up"
-                    data-aos-delay="1000"
-                    data-aos-duration="1200"
-                    class="rounded shadow-sm bg-light border-top"
-                    style="padding: 30px;"
-                >
-                    <img src="{{ url('assets/learn-more/learn_more_8_aaron_de_alca.jpg') }}" width="100%" alt="">
-
-                    <div style="text-align: center" class="py-2">
-                        <h3>Jerazil P. Tilbe</h3>
-                    </div>
-                </div>
-            </div>
-
             <!-- Card 8 -->
             <div class="col-lg-4 col-md-4 mb-4">
                 <div
