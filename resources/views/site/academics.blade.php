@@ -36,17 +36,6 @@
                     <img src="{{ url('/assets/teachers/jeffrey.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Jeffrey D. Dianito</h5>
                     <p class="text-primary small mb-3">BSCS Department</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:jeffreydanesdianito28@gmail.com">jeffreydanesdianito28@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09200721568">0920 072 1568</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>June 28, 1990
-                    </p>
                 </div>
             </div>
         </div>
@@ -58,17 +47,6 @@
                     <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marijustine Tan</h5>
                     <p class="text-primary small mb-3">BSBA Department</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:marijustinetan@gmail.com">marijustinetan@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09212541094">0921 254 1094</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>May 13, 1980
-                    </p>
                 </div>
             </div>
         </div>
@@ -80,17 +58,6 @@
                     <img src="{{ url('/assets/teachers/joyce.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Joyce Bernadeth Y. Celajes</h5>
                     <p class="text-primary small mb-3">Education Department</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:joycecelajescolin@gmail.com">joycecelajescolin@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09482475123">0948 247 5123</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>October 25, 1984
-                    </p>
                 </div>
             </div>
         </div>
@@ -102,17 +69,6 @@
                     <img src="{{ url('/assets/teachers/anna-mae.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Anna Mae Durin</h5>
                     <p class="text-primary small mb-3">BSCRIM Department</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:annamaedurin.edInbscrim@gmail.com">annamaedurin.edInbscrim@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09700872062">0970 087 2062</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>Aug. 23, 1988
-                    </p>
                 </div>
             </div>
         </div>
@@ -129,17 +85,6 @@
                     <img src="{{ url('assets/no-pic/no_pic_lailanne.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Lailanie Robelles</h5>
                     <p class="text-primary small mb-3">Grade 12 (Advisory)</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:lailanierobelles@gmail.com">lailanierobelles@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09971008074">0997 100 8074</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>August 25, 1995
-                    </p>
                 </div>
             </div>
         </div>
@@ -151,17 +96,6 @@
                     <img src="{{ url('/assets/teachers/irin.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Rica Irinco</h5>
                     <p class="text-primary small mb-3">Grade 11</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:irincoricam@gmail.com">irincoricam@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09368938392">0936 893 8392</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>July 27, 2000
-                    </p>
                 </div>
             </div>
         </div>
@@ -173,17 +107,6 @@
                     <img src="{{ url('/assets/teachers/derick.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Derick Ramos</h5>
                     <p class="text-primary small mb-3">Grade 10 (Advisory)</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:derickramos020@gmail.com">derickramos020@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09455114462">0945 511 4462</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>August 17, 1996
-                    </p>
                 </div>
             </div>
         </div>
@@ -195,17 +118,6 @@
                     <img src="{{ url('assets/no-pic/no_pic_celvestre.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Celvastre Cabe</h5>
                     <p class="text-primary small mb-3">Grade 9 (Advisory)</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:celvastrecabe4@gmail.com">celvastrecabe4@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09606508833">0960 650 8833</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>October 17, 1977
-                    </p>
                 </div>
             </div>
         </div>
@@ -217,17 +129,6 @@
                     <img src="{{ url('/assets/teachers/erwin.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Cabe Erwin Angelo</h5>
                     <p class="text-primary small mb-3">Grade 8 (Advisory)</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:cabeerwinangelo@gmail.com">cabeerwinangelo@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09513922520">0951 392 2520</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>August 24, 2002
-                    </p>
                 </div>
             </div>
         </div>
@@ -239,17 +140,6 @@
                     <img src="{{ url('assets/no-pic/no_pic_Marianne.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marianne Dianito</h5>
                     <p class="text-primary small mb-3">Grade 7 (Advisory)</p>
-                    <p class="mb-1">
-                        <i class="fas fa-envelope text-danger me-2"></i>
-                        <a href="mailto:MarianneDianito3@gmail.com">MarianneDianito3@gmail.com</a>
-                    </p>
-                    <p class="mb-1">
-                        <i class="fas fa-phone text-success me-2"></i>
-                        <a href="tel:09552800435">0955 280 0435</a>
-                    </p>
-                    <p class="small text-muted mb-0">
-                        <i class="fas fa-cake-candles text-warning me-2"></i>January 17, 2002
-                    </p>
                 </div>
             </div>
         </div>
