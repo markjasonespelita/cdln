@@ -34,7 +34,7 @@
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/jeffrey.jpg') }}" class="profile-img mb-3">
-                    <h5 class="fw-bold mb-1">Jeffrey Danes Dianito</h5>
+                    <h5 class="fw-bold mb-1">Jeffrey D. Dianito</h5>
                     <p class="text-primary small mb-3">BSCS Department</p>
                     <p class="mb-1">
                         <i class="fas fa-envelope text-danger me-2"></i>
@@ -78,7 +78,7 @@
             <div class="card contact-card text-center h-100 shadow-sm border-0">
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/joyce.jpg') }}" class="profile-img mb-3">
-                    <h5 class="fw-bold mb-1">Joyce Celajes Colin</h5>
+                    <h5 class="fw-bold mb-1">Joyce Bernadeth Y. Celajes</h5>
                     <p class="text-primary small mb-3">Education Department</p>
                     <p class="mb-1">
                         <i class="fas fa-envelope text-danger me-2"></i>
