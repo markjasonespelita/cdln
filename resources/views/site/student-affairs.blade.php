@@ -21,22 +21,22 @@
     <div class="container">
         <ul class="nav nav-pills justify-content-center flex-wrap" id="studentAffairsTabs" role="tablist">
             <li class="nav-item m-1">
-                <a class="nav-link active" id="orgs-tab" data-toggle="pill" href="#orgs" role="tab">Student Organizations</a>
+                <a class="nav-link active" id="orgs-tab" data-bs-toggle="pill" href="#orgs" role="tab">Student Organizations</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="services-tab" data-toggle="pill" href="#services" role="tab">Student Services</a>
+                <a class="nav-link" id="services-tab" data-bs-toggle="pill" href="#services" role="tab">Student Services</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="rights-tab" data-toggle="pill" href="#rights" role="tab">Rights & Responsibilities</a>
+                <a class="nav-link" id="rights-tab" data-bs-toggle="pill" href="#rights" role="tab">Rights & Responsibilities</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="scholarships-tab" data-toggle="pill" href="#scholarships" role="tab">Scholarships & Grants</a>
+                <a class="nav-link" id="scholarships-tab" data-bs-toggle="pill" href="#scholarships" role="tab">Scholarships & Grants</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="cocurricular-tab" data-toggle="pill" href="#cocurricular" role="tab">Co-Curricular Activities</a>
+                <a class="nav-link" id="cocurricular-tab" data-bs-toggle="pill" href="#cocurricular" role="tab">Co-Curricular Activities</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="discipline-tab" data-toggle="pill" href="#discipline" role="tab">Conduct & Discipline</a>
+                <a class="nav-link" id="discipline-tab" data-bs-toggle="pill" href="#discipline" role="tab">Conduct & Discipline</a>
             </li>
         </ul>
     </div>
