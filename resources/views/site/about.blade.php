@@ -21,22 +21,19 @@
     <div class="container">
         <ul class="nav nav-pills justify-content-center flex-wrap" id="aboutTabs" role="tablist">
             <li class="nav-item m-1">
-                <a class="nav-link active" id="overview-tab" data-toggle="pill" href="#overview" role="tab">Overview</a>
+                <a class="nav-link" id="vmgp-tab" data-bs-toggle="pill" href="#vmgp" role="tab">Vision, Mission & Goals</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="vmgp-tab" data-toggle="pill" href="#vmgp" role="tab">Vision, Mission & Goals</a>
+                <a class="nav-link" id="history-tab" data-bs-toggle="pill" href="#history" role="tab">History & Charter</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="history-tab" data-toggle="pill" href="#history" role="tab">History & Charter</a>
+                <a class="nav-link" id="administration-tab" data-bs-toggle="pill" href="#administration" role="tab">Administration</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="administration-tab" data-toggle="pill" href="#administration" role="tab">Administration</a>
+                <a class="nav-link" id="teachers-tab" data-bs-toggle="pill" href="#teachers" role="tab">Our Teachers</a>
             </li>
             <li class="nav-item m-1">
-                <a class="nav-link" id="teachers-tab" data-toggle="pill" href="#teachers" role="tab">Our Teachers</a>
-            </li>
-            <li class="nav-item m-1">
-                <a class="nav-link" id="facilities-tab" data-toggle="pill" href="#facilities" role="tab">Facilities</a>
+                <a class="nav-link" id="facilities-tab" data-bs-toggle="pill" href="#facilities" role="tab">Facilities</a>
             </li>
         </ul>
     </div>
