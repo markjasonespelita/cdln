@@ -21,6 +21,9 @@
     <div class="container">
         <ul class="nav nav-pills justify-content-center flex-wrap" id="aboutTabs" role="tablist">
             <li class="nav-item m-1">
+                <a class="nav-link active" id="overview-tab" data-bs-toggle="pill" href="#overview" role="tab">Overview</a>
+            </li>
+            <li class="nav-item m-1">
                 <a class="nav-link" id="vmgp-tab" data-bs-toggle="pill" href="#vmgp" role="tab">Vision, Mission & Goals</a>
             </li>
             <li class="nav-item m-1">
@@ -44,69 +47,6 @@
 <div class="container-fluid py-4">
     <div class="container">
         <div class="tab-content" id="aboutTabsContent">
-
-
-            <!-- ===================== OVERVIEW ===================== -->
-            <div class="tab-pane fade show active" id="overview" role="tabpanel">
-                <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <img class="img-fluid rounded mb-5 mb-lg-0" src="/design/img/about-1.jpg" alt="Colegio De Las Navas">
-                    </div>
-                    <div class="col-lg-7">
-                        <p class="section-title pr-5"><span class="pr-2">Learn About Us</span></p>
-                        <h1 class="mb-4">A Home of Excellence and Growth</h1>
-                        <p>At Colegio De Las Navas, we believe that education goes beyond the classroom — it's about shaping values, nurturing talents, and inspiring every learner to reach their fullest potential. With dedicated teachers, a supportive community, and a culture of excellence, we strive to create an environment where students grow in knowledge, confidence, and character. Here, every child is encouraged to dream big, learn with purpose, and lead with heart.</p>
-                        <div class="row pt-2 pb-4">
-                            <div class="col-6 col-md-4">
-                                <img class="img-fluid rounded" src="/design/img/about-2.jpg" alt="">
-                            </div>
-                            <div class="col-6 col-md-8">
-                                <h3 class="mb-3">Core Values</h3>
-                                <p class="text-muted mb-2"><strong>CDLN</strong> stands for:</p>
-                                <ul class="list-unstyled m-0">
-                                    <li class="py-2 border-top border-bottom"><i class="fa fa-check text-primary mr-3"></i><strong>C</strong>ompetence</li>
-                                    <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i><strong>D</strong>iversity</li>
-                                    <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i><strong>L</strong>ife-Long Learning</li>
-                                    <li class="py-2 border-bottom"><i class="fa fa-check text-primary mr-3"></i><strong>N</strong>obility</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="alert alert-primary">
-                            <i class="fa fa-quote-left mr-2"></i><em>"Molding Holistic Individuals for a Brighter Tomorrow"</em>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quick Stats -->
-                <div class="row mt-5 text-center">
-                    <div class="col-6 col-md-3 mb-4">
-                        <div class="bg-light rounded p-4 shadow-sm border-top border-primary">
-                            <h2 class="text-primary font-weight-bold">2005</h2>
-                            <p class="mb-0 text-muted">Year Established</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 mb-4">
-                        <div class="bg-light rounded p-4 shadow-sm border-top border-primary">
-                            <i class="fa fa-university h2 text-primary"></i>
-                            <p class="mb-0 text-muted mt-1">Community College</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 mb-4">
-                        <div class="bg-light rounded p-4 shadow-sm border-top border-primary">
-                            <i class="fa fa-map-marker-alt h2 text-primary"></i>
-                            <p class="mb-0 text-muted mt-1">Las Navas, Northern Samar</p>
-                        </div>
-                    </div>
-                    <div class="col-6 col-md-3 mb-4">
-                        <div class="bg-light rounded p-4 shadow-sm border-top border-primary">
-                            <i class="fa fa-graduation-cap h2 text-primary"></i>
-                            <p class="mb-0 text-muted mt-1">CHED & DepEd Recognized</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
             <!-- ===================== VISION, MISSION & GOALS ===================== -->
             <div class="tab-pane fade" id="vmgp" role="tabpanel">
                 <div class="text-center pb-4">
