@@ -86,8 +86,7 @@
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/gregorio.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Gregorio M. Orsolino</h5>
-                    <p class="text-primary small mb-3">CDLN Founder</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>Jan 24, 1964/p>
+                    <p class="text-primary small mb-3">Deputy Administrator</p>
                 </div>
             </div>
         </div>
@@ -98,8 +97,7 @@
                 <div class="card-body">
                     <img src="{{ url('/assets/teachers/inday.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Inday Lynn G. Orsolino</h5>
-                    <p class="text-primary small mb-3">CDLN Founder</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>Jan 24, 1964/p>
+                    <p class="text-primary small mb-3">College Administrator</p>
                 </div>
             </div>
         </div>
@@ -113,7 +111,6 @@
                     <img src="{{ url('/assets/teachers/jeffrey.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Jeffrey D. Dianito</h5>
                     <p class="text-primary small mb-3">BSCS Department</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>June 28, 1990</p>
                 </div>
             </div>
         </div>
@@ -125,7 +122,6 @@
                     <img src="{{ url('/design/img/logo/logo.png') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marijustine Tan</h5>
                     <p class="text-primary small mb-3">BSBA Department</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>May 13, 1980</p>
                 </div>
             </div>
         </div>
@@ -137,7 +133,6 @@
                     <img src="{{ url('/assets/teachers/joyce.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Joyce Bernadeth Y. Celajes</h5>
                     <p class="text-primary small mb-3">Education Department</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>October 25, 1984</p>
                 </div>
             </div>
         </div>
@@ -163,7 +158,6 @@
                     <img src="{{ url('assets/no-pic/no_pic_lailanne.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Lailanie Robelles</h5>
                     <p class="text-primary small mb-3">Grade 12 (Advisory)</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>August 25, 1995</p>
                 </div>
             </div>
         </div>
@@ -175,7 +169,6 @@
                     <img src="{{ url('/assets/teachers/irin.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Rica Irinco</h5>
                     <p class="text-primary small mb-3">Grade 11</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>July 27, 2000</p>
                 </div>
             </div>
         </div>
@@ -187,7 +180,6 @@
                     <img src="{{ url('/assets/teachers/derick.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Derick Ramos</h5>
                     <p class="text-primary small mb-3">Grade 10 (Advisory)</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>August 17, 1996</p>
                 </div>
             </div>
         </div>
@@ -199,7 +191,6 @@
                     <img src="{{ url('assets/no-pic/no_pic_celvestre.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Celvastre Cabe</h5>
                     <p class="text-primary small mb-3">Grade 9 (Advisory)</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>October 17, 1977</p>
                 </div>
             </div>
         </div>
@@ -211,7 +202,6 @@
                     <img src="{{ url('/assets/teachers/erwin.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Cabe Erwin Angelo</h5>
                     <p class="text-primary small mb-3">Grade 8 (Advisory)</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>August 24, 2002</p>
                 </div>
             </div>
         </div>
@@ -223,7 +213,6 @@
                     <img src="{{ url('assets/no-pic/no_pic_Marianne.jpg') }}" class="profile-img mb-3">
                     <h5 class="fw-bold mb-1">Marianne Dianito</h5>
                     <p class="text-primary small mb-3">Grade 7 (Advisory)</p>
-                    <p class="small text-muted mb-0"><i class="fas fa-cake-candles text-warning me-2"></i>January 17, 2002</p>
                 </div>
             </div>
         </div>
